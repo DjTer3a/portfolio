@@ -232,6 +232,11 @@ const posts = [
           </div>
 
         <div className="relative max-w-7xl mx-auto">
+
+        <h1 className="text-9xl tracking-tight font-extrabold text-white sm:text-5xl md:text-9xl">
+                <span className="block">Work In Progress</span>
+                
+              </h1>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {posts.map((post) => (
               <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -256,7 +261,7 @@ const posts = [
                 </div>
               </div>
             ))}
-          </div>
+          </div> 
         </div>
 
 
