@@ -541,7 +541,7 @@ export default function Example() {
                     <br/> 
                       <button
                         type="submit"
-                        className="mt-2 w-20 inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
+                        className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
                       >
                         Submit
                       </button>
