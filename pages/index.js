@@ -191,7 +191,7 @@ export default function Example() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <img
               className="relative rounded-lg shadow-lg"
-              src="/123.png"
+              src="/123.PNG"
               alt="screenshot"
             />
           </div>
