@@ -536,7 +536,7 @@ export default function Example() {
                     {message}
                     </div>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
-                    <div className="sm:col-span-2 sm:flex sm:justify-end" class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO"></div>
+                    <div class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO"></div>
                     <br/> 
                       <button
                         type="submit"
