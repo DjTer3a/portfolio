@@ -536,6 +536,8 @@ export default function Example() {
                     {message}
                     </div>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
+                    <div class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO"></div>
+                    <br/> 
                       <button
                         type="submit"
                         className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
