@@ -240,7 +240,7 @@ export default function Example() {
         {/* Header */}
         <div className="bg-warm-page-yellow">
 
-                      
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>              
 
 
           <div className="py-5 lg:py-5">
@@ -427,7 +427,7 @@ export default function Example() {
                 
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                   <h3 className="text-lg font-medium text-page-green">Send us a message</h3>
-                  <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                  <form action="?" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                   onSubmit={sendEmail}
                   >
                     <div>
@@ -536,7 +536,7 @@ export default function Example() {
                     {message}
                     </div>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
-                    <div class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO">
+                    <div class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO"></div>
                     <br/> 
                       <button
                         type="submit"
@@ -545,7 +545,7 @@ export default function Example() {
                         Submit
                       </button>
                     </div>
-                    </div>
+                    
                   </form>
                 </div>
               </div>
