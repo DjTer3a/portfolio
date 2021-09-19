@@ -536,7 +536,7 @@ export default function Example() {
                     {message}
                     </div>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
-                    <div className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md">
+                    <div className="mt-2 w-full inline-flex items-left justify-left px-6 py-3 border border-transparent rounded-md">
                     <div class="g-recaptcha" data-sitekey="6LeQV3ocAAAAAFXFhijeNHKFWMaeq7LVGYileFwO"></div></div>
                     <br/> 
                       <button
