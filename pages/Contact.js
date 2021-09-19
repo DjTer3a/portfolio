@@ -49,7 +49,7 @@ const footerNavigation = {
   social: [
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://www.facebook.com/jfgiaat',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -62,7 +62,7 @@ const footerNavigation = {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/not_really_sane/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -75,7 +75,7 @@ const footerNavigation = {
     },
     {
       name: 'Twitter',
-      href: '#',
+      href: 'https://twitter.com/mostafa2001711',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -84,7 +84,7 @@ const footerNavigation = {
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/DjTer3a',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -249,8 +249,7 @@ export default function Example() {
                 Get in touch
               </h1>
               <p className="mt-6 text-xl text-white max-w-3xl">
-                Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna
-                ut volutpat. Sagittis et vel et fermentum amet consequat.
+                Send us a message using the contat form below, and our team of developers will get in contact with you as soon as possible.
               </p>
             </div>
           </div>
@@ -368,8 +367,7 @@ export default function Example() {
                   </div>
                   <h3 className="text-lg font-medium text-page-green">Contact information</h3>
                   <p className="mt-6 text-base text-teal-50 max-w-3xl">
-                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                    lacus arcu.
+                    You can also contact us directly using any of the links below or using the links at the bottom of every page.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -377,19 +375,19 @@ export default function Example() {
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <PhoneIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">+1 (555) 123-4567</span>
+                      <span className="ml-3">+90 (552) 724-9616</span>
                     </dd>
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <MailIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">support@workcation.com</span>
+                      <span className="ml-3">sasa2001711@gmail.com</span>
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
                     <li>
-                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="#">
+                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="https://www.facebook.com/jfgiaat">
                         <span className="sr-only">Facebook</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                           <path
@@ -401,7 +399,7 @@ export default function Example() {
                       </a>
                     </li>
                     <li>
-                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="#">
+                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="https://github.com/DjTer3a">
                         <span className="sr-only">GitHub</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                           <path
@@ -413,7 +411,7 @@ export default function Example() {
                       </a>
                     </li>
                     <li>
-                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="#">
+                      <a className="transition duration-500 ease-in-out text-white hover:text-page-green" href="https://twitter.com/mostafa2001711">
                         <span className="sr-only">Twitter</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
