@@ -14,10 +14,11 @@ module.exports = {
         page: {
           yellow: '#FFD166',
           red: '#EF476F',
-          bluelight: '#118AB2',
+          bluelighter: '#118AB2',
+          bluelight: '#0b2942',
           green: '#06D6A0',
           greendark: '#2d6a4f',
-          bluedarker: '#073B4C',
+          bluedarker: '#011627',
         }
       }
   }
