@@ -24,7 +24,7 @@
   }
   ```
 */
-
+import mailgo from "mailgo";
 import emailjs from 'emailjs-com';
 import React, { useRef,useState,Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -99,8 +99,6 @@ const footerNavigation = {
 }
 
 
-
-
 export default function Example() {
 
       // 2. Hold a message in state to handle the response from our API.
@@ -123,24 +121,11 @@ export default function Example() {
       setMessage(
         "You have made contact! 🎉 We will get back to you ASAP."
       );
-
-  
 }
-
-
-
-
-
-
-
-  
   return (
-
-    
     <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker">
-      
-      
-    <div className="relative pt-6 pb-16 sm:pb-24">
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+    <div className=" relative pt-6 pb-16 sm:pb-24">
     <Popover>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
@@ -151,7 +136,7 @@ export default function Example() {
                       <img className=" h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-page-bluedarker hover:text-white hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="transition duration-500 ease-in-out hover:bg-page-white bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-white hover:text-page-green hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 hover:bg-opacity-5">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -160,16 +145,16 @@ export default function Example() {
                 </div>
                 <div className="hidden md:flex md:space-x-10">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-page-bluedarker hover:text-white">
+                    <a key={item.name} href={item.href} className="font-medium text-white hover:text-page-green">
                       {item.name}
                     </a>
                   ))}
                 </div>
                 <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-                  <span className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green inline-flex rounded-md shadow">
+                  <span className="inline-flex rounded-md shadow">
                     <a
                       href="/CV.pdf"
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                      className="transition duration-500 ease-in-out inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-page-bluelight hover:bg-white hover:text-page-green hover:bg-opacity-5"
                     >
                       Download CV
                     </a>
@@ -196,15 +181,12 @@ export default function Example() {
                     <div>
                     <a href="/">
                     <img className="h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
-                    <style jsx>{`
-                    #pic {
-                      height:60px;}`                
-                    }</style>
+                    
                    </a>
 
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green  bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-page-bluedarker hover:text-white hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-white hover:text-page-green hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 hover:bg-opacity-5" >
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -215,7 +197,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green block px-3 py-2 rounded-md text-base font-medium text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                        className="transition duration-500 ease-in-out bg-page-bluelight block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white hover:text-page-green hover:bg-opacity-5"
                       >
                         {item.name}
                       </a>
@@ -223,7 +205,7 @@ export default function Example() {
                   </div>
                   <a
                     href="/CV.pdf"
-                    className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green block w-full px-5 py-3 text-center font-medium text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                    className="transition duration-500 ease-in-out bg-page-bluelight block w-full px-5 py-3 text-center font-medium text-white hover:bg-white hover:text-page-green hover:bg-opacity-5"
                   >
                     Download CV
                   </a>
@@ -239,7 +221,7 @@ export default function Example() {
       <main className="overflow-hidden">
         {/* Header */}
         <div className="bg-warm-page-yellow">
-
+                 
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>              
 
 
@@ -249,7 +231,7 @@ export default function Example() {
                 Get in touch
               </h1>
               <p className="mt-6 text-xl text-white max-w-3xl">
-                Send us a message using the contat form below, and our team of developers will get in contact with you as soon as possible.
+                Send me a message using the contact form below, and I will get in contact with you as soon as possible.
               </p>
             </div>
           </div>
@@ -262,7 +244,7 @@ export default function Example() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative shadow-xl">
               <h2 id="contact-heading" className="sr-only">
-                Contact us
+                Contact me
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
@@ -367,7 +349,7 @@ export default function Example() {
                   </div>
                   <h3 className="text-lg font-medium text-page-green">Contact information</h3>
                   <p className="mt-6 text-base text-teal-50 max-w-3xl">
-                    You can also contact us directly using any of the links below or using the links at the bottom of every page.
+                    You can also contact me directly using any of the links below or using the links at the bottom of every page.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -375,14 +357,19 @@ export default function Example() {
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <PhoneIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">+90 (552) 724-9616</span>
+                      
+                      <span className="transition duration-500 ease-in-out text-white hover:text-page-green ml-3">
+                        <a href="tel:+90 (552) 724-9616">+90 (552) 724-9616</a>
+                      </span>
                     </dd>
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <MailIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">sasa2001711@gmail.com</span>
+                      <span className="transition duration-500 ease-in-out text-white hover:text-page-green ml-3">
+                        <a  href="mailto:sasa2001711@gmail.com">sasa2001711@gmail.com</a>
+                      </span>
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
@@ -424,7 +411,7 @@ export default function Example() {
                 {/* Contact form */}
                 
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                  <h3 className="text-lg font-medium text-page-green">Send us a message</h3>
+                  <h3 className="text-lg font-medium text-page-green">Send me a message</h3>
                   <form action="?" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                   onSubmit={sendEmail}
                   >
@@ -522,7 +509,7 @@ export default function Example() {
                           required
                           id="message"
                           name="message"
-                          maxlength="500"
+                          maxLength="500"
                           rows={4}
                           className="py-3 px-4 block w-full shadow-sm text-page-green focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md"
                           aria-describedby="message-max"
@@ -601,6 +588,20 @@ export default function Example() {
             </p>
         </div>
       </footer>
+
+      
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: Ubuntu;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
     </div>
   )
 }

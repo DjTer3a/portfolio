@@ -1,4 +1,6 @@
 const colors = require('tailwindcss/colors')
+
+   
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -17,9 +19,9 @@ module.exports = {
           greendark: '#2d6a4f',
           bluedarker: '#073B4C',
         }
-      },
-    },
-  },
+      }
+  }
+},
   plugins: [
     // ...
     require('@tailwindcss/forms'),

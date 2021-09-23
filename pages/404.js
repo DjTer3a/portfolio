@@ -1,19 +1,17 @@
 /* This example requires Tailwind CSS v2.0+ */
+
+import { CameraIcon } from '@heroicons/react/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import Typewriter from 'typewriter-effect';
-
-
-
+import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 
 
 const navigation = [
   { name: 'Portfolio', href: './Portfolio' },
-  { name: 'Blog', href: './Blog' },
+  { name: 'Blog', href: 'Blog' },
   // add blog
-  { name: 'About', href: './About' },
-  { name: 'Contact', href: './Contact' },
+  { name: 'About', href: 'About' },
+  { name: 'Contact', href: 'Contact' },
 ]
 const footerNavigation = {
   social: [
@@ -70,11 +68,15 @@ const footerNavigation = {
 
 export default function Example() {
   return (
-    <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker">
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
-      <div className="relative overflow-hidden">
-        <div className="relative pt-6 pb-16 sm:pb-24">
-          <Popover>
+    <main
+      className="min-h-screen bg-cover bg-top sm:bg-top"
+      style={{
+        backgroundImage:
+          'url("https://images.unsplash.com/photo-1631031651060-424d82e511de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")',
+      }}
+    >
+      <div className="relative pt-6 pb-16 sm:pb-24">
+      <Popover>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
                 <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
@@ -161,80 +163,28 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
+              </div>
 
-          <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
-            <div className="text-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                <span className="block ">Ask me to build your</span>
-                <span className="block mt-6 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 text-page-green">
-                <Typewriter
-                  options={{
-                    strings: ['Professional Website','Personal Website', 'Android App', ],
-                    autoStart: true,
-                    loop: true,
-                  }}/>
-                  </span>
-              </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Hi I am Mostafa. I build elegant and functional websites and applications for ,
-                Small Businesses, Independent Creators, and anyone who needs a website.
-                Show the world what you are really about using cutting-edge technologies such as:- 
-                Nextjs, Vercel, Laravel, and TailwindCSS.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
 
-        <div className="relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <img
-              className="relative rounded-lg shadow-lg"
-              src="/123.PNG"
-              alt="screenshot"
-            />
-          </div>
+
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+        <p className="text-sm font-semibold text-white uppercase tracking-wide">404 error</p>
+        <h1 className="mt-2 text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
+          Not every road leads to a destination, but don't let it discourage you from taking every road.
+        </h1>
+        <p className="mt-2 text-lg font-medium text-white">
+          It looks like the page you’re looking for doesn't exist.
+        </p>
+        <div className="mt-6">
+          <a
+            href="/"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-page-bluelight hover:text-page-green bg-opacity-25 hover:bg-opacity-75 hover:bg-white"
+          >
+            Go back home
+          </a>
         </div>
       </div>
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <h2 className="text-center text-white text-xl font-semibold tracking-wide">
-            Hire me on:-
-          </h2>
-          
-          <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
-            <a href="https://www.fiverr.com/mostafahigazy">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-20" src="/fiverr.png" alt="Fiverr" />
-              </div>
-            </a>
-            <a href="https://www.upwork.com/o/profiles/users/~012a4278b6b59e6072/">
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="/upwork.png"
-                alt="UpWork"
-              />
-            </div>
-            </a>
-            
-
-            
-            <a href="/Contact">
-            <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-              <img
-                className="h-12"
-                src="/directly.png"
-                alt="Directly"
-              />
-            </div>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/mostafa-higazy-577576132">
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src="/linkedin.png" alt="LinkedIn" />
-            </div>
-            </a>
-          </div>
-        </div>
 
       <footer className="" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
@@ -244,7 +194,7 @@ export default function Example() {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
               <p className="text-white text-base">
-                Making the world a better place by bringing your vision to life.
+                 Making the world a better place by bringing your vision to life.
               </p>
               <div className="flex space-x-6">
                 {footerNavigation.social.map((item) => (
@@ -256,11 +206,11 @@ export default function Example() {
               </div>
             </div>
           </div>
-            <p className="text-base text-white xl:text-center">
-              &copy; 2021 Mostafa Higazy. All rights reserved.
-            </p>
         </div>
       </footer>
+
+
+      
       <style jsx global>{`
         html,
         body {
@@ -273,6 +223,6 @@ export default function Example() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </main>
   )
 }

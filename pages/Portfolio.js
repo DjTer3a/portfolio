@@ -135,6 +135,7 @@ const posts = [
   export default function Example() {
     return (
       <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
         <div className="absolute inset-0">
         </div>
 
@@ -149,7 +150,7 @@ const posts = [
                       <img className=" h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-page-bluedarker hover:text-white hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="transition duration-500 ease-in-out hover:bg-page-white bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-white hover:text-page-green hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 hover:bg-opacity-5">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -158,16 +159,16 @@ const posts = [
                 </div>
                 <div className="hidden md:flex md:space-x-10">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-page-bluedarker hover:text-white">
+                    <a key={item.name} href={item.href} className="font-medium text-white hover:text-page-green">
                       {item.name}
                     </a>
                   ))}
                 </div>
                 <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-                  <span className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green inline-flex rounded-md shadow">
+                  <span className="inline-flex rounded-md shadow">
                     <a
                       href="/CV.pdf"
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                      className="transition duration-500 ease-in-out inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-page-bluelight hover:bg-white hover:text-page-green hover:bg-opacity-5"
                     >
                       Download CV
                     </a>
@@ -194,15 +195,12 @@ const posts = [
                     <div>
                     <a href="/">
                     <img className="h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
-                    <style jsx>{`
-                    #pic {
-                      height:60px;}`                
-                    }</style>
+                    
                    </a>
 
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green  bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-page-bluedarker hover:text-white hover:bg-page-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="transition duration-500 ease-in-out bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-white hover:text-page-green hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 hover:bg-opacity-5" >
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -213,7 +211,7 @@ const posts = [
                       <a
                         key={item.name}
                         href={item.href}
-                        className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green block px-3 py-2 rounded-md text-base font-medium text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                        className="transition duration-500 ease-in-out bg-page-bluelight block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white hover:text-page-green hover:bg-opacity-5"
                       >
                         {item.name}
                       </a>
@@ -221,7 +219,7 @@ const posts = [
                   </div>
                   <a
                     href="/CV.pdf"
-                    className="transition duration-500 ease-in-out bg-page-bluelight hover:bg-page-green block w-full px-5 py-3 text-center font-medium text-page-bluedarker bg-page-bluelight hover:bg-page-green hover:text-white"
+                    className="transition duration-500 ease-in-out bg-page-bluelight block w-full px-5 py-3 text-center font-medium text-white hover:bg-white hover:text-page-green hover:bg-opacity-5"
                   >
                     Download CV
                   </a>
@@ -291,7 +289,19 @@ const posts = [
         </div>
       </footer>
 
+      
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: Ubuntu;
+        }
 
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
 
       </div>
     )
