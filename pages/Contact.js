@@ -25,6 +25,7 @@
   ```
 */
 import mailgo from "mailgo";
+import Head from 'next/head'
 import emailjs from 'emailjs-com';
 import React, { useRef,useState,Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -124,6 +125,9 @@ export default function Example() {
 }
   return (
     <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker">
+      <Head>
+      <title>Contact</title>
+      </Head>
      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
     <div className=" relative pt-6 pb-16 sm:pb-24">
     <Popover>

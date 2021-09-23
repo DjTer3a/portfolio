@@ -15,6 +15,7 @@
   }
   ```
 */
+import Head from 'next/head'
 import { CameraIcon } from '@heroicons/react/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -83,6 +84,9 @@ const footerNavigation = {
 export default function Example() {
   return (
   <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+    <Head>
+      <title>About</title>
+      </Head>
      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
     <div className="relative pt-6 pb-16 sm:pb-24">
     <Popover>

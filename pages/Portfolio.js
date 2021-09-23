@@ -3,6 +3,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Fragment } from 'react'
+import Head from 'next/head'
 
 const navigation = [
   { name: 'Portfolio', href: './Portfolio' },
@@ -135,6 +136,9 @@ const posts = [
   export default function Example() {
     return (
       <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+        <Head>
+          <title>Portfolio</title>
+        </Head>
          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
         <div className="absolute inset-0">
         </div>

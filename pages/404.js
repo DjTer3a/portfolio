@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-
+import Head from 'next/head'
 import { CameraIcon } from '@heroicons/react/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -75,6 +75,9 @@ export default function Example() {
           'url("https://images.unsplash.com/photo-1631031651060-424d82e511de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")',
       }}
     >
+      <Head>
+      <title>404</title>
+      </Head>
       <div className="relative pt-6 pb-16 sm:pb-24">
       <Popover>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">

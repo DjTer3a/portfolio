@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Typewriter from 'typewriter-effect';
+import Head from 'next/head'
 
 
 
@@ -71,6 +72,9 @@ const footerNavigation = {
 export default function Example() {
   return (
     <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker">
+      <Head>
+        <title>Home Page</title>
+      </Head>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
       <div className="relative overflow-hidden">
         <div className="relative pt-6 pb-16 sm:pb-24">
