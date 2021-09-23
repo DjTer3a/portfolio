@@ -69,7 +69,7 @@ const footerNavigation = {
   ],
 }
 
-const name = 'A tedious Mess/My Life Blog'
+const name = 'A Tedious Mess/Dev Life Blog'
 export const siteTitle = 'A Tedious Mess'
 
 
@@ -77,7 +77,9 @@ export default function Layout({ children, home }) {
   return (
     
     <div className={styles.container}>
+      
     <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
       <div className="relative pt-6 pb-16 sm:pb-24">
     <Popover>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -234,7 +236,18 @@ export default function Layout({ children, home }) {
     </div>
 
 
+    <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: Ubuntu;
+        }
 
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
     
 
 
