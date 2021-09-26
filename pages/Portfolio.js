@@ -4,52 +4,97 @@ import Layout from '../components/Layouts'
 import FooterComponent from '../components/common/footer'
 import HeaderComponent from '../components/common/header'
 
+
 const posts = [
     {
-      title: 'Boost your conversion rate',
+      title: 'ِAndroid Music App',
       href: '#',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
+        'Seeem Music App A music app for android with several different features. App was created with the help of fellow students as a project for our course.',
+      filler:
+      'Created using the following technologies:-',
       imageUrl:
         'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      
-      author: {
+      workingTime: '8 weeks',
+      tech1: {
         href: '#',
         imageUrl:
           'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       },
-      
-    },
-    {
-      title: 'How to use search engine optimization to drive sales',
-      href: '#',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
-      date: 'Mar 10, 2020',
-      datetime: '2020-03-10',
-      imageUrl:
-        'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      readingTime: '4 min',
-      author: {
+      tech2:{
         href: '#',
         imageUrl:
-          'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech3:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech4:{
+      },
+      tech5:{
+      },
+      tech6:{
       },
     },
     {
-      title: 'Improve your customer experience',
+      title: 'Portfolio Website',
       href: '#',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
-      date: 'Feb 12, 2020',
-      datetime: '2020-02-12',
+        'The website that you are looking at right now.',
+      filler:
+      'Created using the following technologies:-',
       imageUrl:
-        'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      readingTime: '11 min',
-      author: {
+        'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+      workingTime: '3 weeks',
+      
+      tech1:{
         href: '#',
         imageUrl:
-          'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          'https://www.pikpng.com/pngl/m/204-2047555_datei-java-logo-svg-java-logo-svg-clipart.png',
+      },
+      tech2:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech3:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+    },
+    {
+      title: 'Studying in Turkey',
+      href: '#',
+      filler:
+      'Created using the following technologies:-',
+      description:
+        'This website contains all the necessary steps, and information required to become a student in Turkey.',
+      workingTime: '6 weeks',
+      imageUrl:
+        'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+      tech1:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech2:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech3:{
+        href: '#',
+        imageUrl:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      },
+      tech4:{
+      },
+      tech5:{
+      },
+      tech6:{
       },
     }
       
@@ -64,8 +109,8 @@ const posts = [
         <Layout></Layout>
         <HeaderComponent></HeaderComponent>
         <div className="relative max-w-7xl mx-auto">
-        <h1 className="text-9xl tracking-tight font-extrabold text-white sm:text-5xl md:text-9xl">
-                <span className="block">Work In Progress</span>
+        <h1 className="text-9xl font-extrabold text-white sm:text-5xl md:text-9xl text-center">
+          Work In Progress
               </h1>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none ">
             {posts.map((post) => (
@@ -80,10 +125,20 @@ const posts = [
                       <p className="mt-3 text-base text-white">{post.description}</p>
                     </a>
                   </div>
-                  <div className="mt-6 flex items-center">
+                  <div className="mt-6 mx-auto gap-10 flex items-center">
                     <div className="flex-shrink-0">
-                      <a href={post.author.href}>
-                        <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
+                      <a href={post.tech1.href}>
+                        <img className="h-10 w-10 rounded-full" src={post.tech1.imageUrl} alt="" />
+                      </a>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <a href={post.tech2.href}>
+                        <img className="h-10 w-10 rounded-full" src={post.tech2.imageUrl} alt="" />
+                      </a>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <a href={post.tech3.href}>
+                        <img className="h-10 w-10 rounded-full" src={post.tech3.imageUrl} alt="" />
                       </a>
                     </div>
                   </div>

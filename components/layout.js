@@ -1,13 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from './utils.module.css'
 import Link from 'next/link'
-
-import { CameraIcon } from '@heroicons/react/solid'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Portfolio', href: 'Portfolio' },

@@ -80,7 +80,7 @@ function FooterComponent() {
                 </div>
                 </div>
             </div>
-                <p className="text-base text-white xl:text-center">
+                <p className="text-base text-white xl:text-center relative pt-6 pb-1">
                 &copy; 2021 Mostafa Higazy. All rights reserved.
                 </p>
             </div>
