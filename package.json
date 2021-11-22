@@ -19,6 +19,7 @@
     "mailgo": "^0.12.2",
     "mailgun-js": "^0.22.0",
     "next": "latest",
+    "next-i18next": "^9.1.0",
     "next-images": "^1.8.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
