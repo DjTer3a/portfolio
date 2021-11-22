@@ -12,12 +12,10 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     mailgo(mailgoConfig);
   }, []);
-
+  MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
   return <Component {...pageProps} />;
 }
 
-export default MyApp;
+export default  appWithTranslation(MyApp);
 
 
-MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
-export default appWithTranslation(MyApp);
