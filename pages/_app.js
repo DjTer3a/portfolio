@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css'
-import { appWithTranslation } from '../i18n'
 import { useEffect } from "react";
 
 import mailgo from "mailgo";
@@ -12,8 +11,13 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     mailgo(mailgoConfig);
   }, []);
-  getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
+
   return <Component {...pageProps} />;
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;
+
+// import { appWithTranslation } from '../i18n'
+// const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />
+// MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) })
+// export default appWithTranslation(MyApp)
