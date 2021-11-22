@@ -19,6 +19,6 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 
 
-const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
-MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
-export default appWithTranslation(MyApp);
+const MyApp2 = ({ Component, pageProps }) => <Component {...pageProps} />;
+MyApp2.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) });
+export default appWithTranslation(MyApp2);
