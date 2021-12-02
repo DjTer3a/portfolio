@@ -3,9 +3,4 @@ title: 'Jouney to Trabzon'
 date: '2021-09-14'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
-
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Trabzon is one of the most magical places that I have ever been to. The mountains and the sea emenated such an aura that made me feel at peace and at edge at the same time. While in Trabzon I ventured into old ruins of lost civilizations, into ancient limestone caves that were carved by water over 3,000 years ago. I got to know more about Turkish Heritage and culture, and enjoyed every single moment on the top of mountains, where you could look down and see the clouds under your feet. That experience is one of the most cherished memories I have although my phone almost fell off a mountain.

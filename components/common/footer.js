@@ -70,18 +70,18 @@ function FooterComponent() {
                 <p className="text-white text-base">
                     Making the world a better place by bringing your vision to life.
                 </p>
-                <div className="flex space-x-6">
-                    {footerNavigation.social.map((item) => (
-                    <a key={item.name} href={item.href} className="transition duration-500 ease-in-out text-white hover:text-page-green">
-                        <span className="sr-only">{item.name}</span>
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
-                    </a>
-                    ))}
-                </div>
+                  <div className="flex space-x-6">
+                      {footerNavigation.social.map((item) => (
+                      <a key={item.name} href={item.href} className="transition duration-500 ease-in-out text-white hover:text-page-green">
+                          <span className="sr-only">{item.name}</span>
+                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                      </a>
+                      ))}
+                  </div>
                 </div>
             </div>
                 <p className="text-base text-white xl:text-center relative pt-6 pb-1">
-                &copy; 2021 Mostafa Higazy. All rights reserved.
+                &copy; Mostafa Higazy. 2021 All rights reserved.
                 </p>
             </div>
         </footer>

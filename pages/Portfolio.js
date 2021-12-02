@@ -8,95 +8,50 @@ import HeaderComponent from '../components/common/header'
 const posts = [
     {
       title: 'ِAndroid Music App',
-      href: '#',
+      href: 'https://github.com/DjTer3a/g1a_project',
       description:
-        'Seeem Music App A music app for android with several different features. App was created with the help of fellow students as a project for our course.',
-      filler:
-      'Created using the following technologies:-',
+        'This app was created with the help of fellow students as a project for our computer science course. The app contains many features, and gave us experience in Android development, and solidified our grasp of MVC principles. Tools, such as Firebase, and Android Studio helped us unleash the full potential of this app.',
       imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+        '/SEEEM.png',
       workingTime: '8 weeks',
-      tech1: {
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech2:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech3:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech4:{
-      },
-      tech5:{
-      },
-      tech6:{
-      },
     },
     {
       title: 'Portfolio Website',
-      href: '#',
+      href: '/',
       description:
-        'The website that you are looking at right now.',
-      filler:
-      'Created using the following technologies:-',
+        'The website that you are looking at right now. Created with love using NextJS and styled using TailwindCSS.',
       imageUrl:
-        'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+        '/portfoliowebsite.gif',
       workingTime: '3 weeks',
       
-      tech1:{
-        href: '#',
-        imageUrl:
-          'https://www.pikpng.com/pngl/m/204-2047555_datei-java-logo-svg-java-logo-svg-clipart.png',
-      },
-      tech2:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech3:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
     },
     {
-      title: 'Studying in Turkey',
-      href: '#',
-      filler:
-      'Created using the following technologies:-',
+      title: 'Studying in Turkey(Work In Progress)',
+      href: '/test',
       description:
-        'This website contains all the necessary steps, and information required to become a student in Turkey.',
+        'This website contains all the necessary steps, and information required to become a student in Turkey. Built using Laravel, and TailwindCSS.',
       workingTime: '6 weeks',
       imageUrl:
-        'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-      tech1:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech2:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech3:{
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
-      tech4:{
-      },
-      tech5:{
-      },
-      tech6:{
-      },
-    }
+        '/wip2.gif',
+    },
+    {
+      title: 'To Do List Web Application(Work In Progress)',
+      href: '/test',
+      description:
+        'This web application is a Full-Stack To Do List built using the MERN stack and adheres to CRUD principles.',
+      workingTime: '6 weeks',
+      imageUrl:
+        '/wip3.gif',
+    },
+    {
+      title: 'NoteBook App (Work In Progress)',
+      href: '/test',
+      description:
+        'This web application is a Full-Stack  NoteBook app using React and Firebase.',
+      workingTime: '6 weeks',
+      imageUrl:
+        '/wip4.gif',
+    },
       
   ]
   
@@ -109,9 +64,6 @@ const posts = [
         <Layout></Layout>
         <HeaderComponent></HeaderComponent>
         <div className="relative max-w-7xl mx-auto">
-        <h1 className="text-9xl font-extrabold text-white sm:text-5xl md:text-9xl text-center">
-          Work In Progress
-              </h1>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none ">
             {posts.map((post) => (
               <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -125,23 +77,7 @@ const posts = [
                       <p className="mt-3 text-base text-white">{post.description}</p>
                     </a>
                   </div>
-                  <div className="mt-6 mx-auto gap-10 flex items-center">
-                    <div className="flex-shrink-0">
-                      <a href={post.tech1.href}>
-                        <img className="h-10 w-10 rounded-full" src={post.tech1.imageUrl} alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-shrink-0">
-                      <a href={post.tech2.href}>
-                        <img className="h-10 w-10 rounded-full" src={post.tech2.imageUrl} alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-shrink-0">
-                      <a href={post.tech3.href}>
-                        <img className="h-10 w-10 rounded-full" src={post.tech3.imageUrl} alt="" />
-                      </a>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             ))}

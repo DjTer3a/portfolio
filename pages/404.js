@@ -1,7 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Head from 'next/head'
 import Layout from '../components/Layouts'
-import HeaderComponent from "../components/common/header";
 import FooterComponent from "../components/common/footer";
 
 export default function Example() {
@@ -17,7 +16,7 @@ export default function Example() {
       <title>404</title>
       </Head>
       <Layout></Layout>
-      <HeaderComponent></HeaderComponent>
+      
       
       <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
         <p className="text-sm font-semibold text-white uppercase tracking-wide">404 error</p>
