@@ -13,7 +13,6 @@ const posts = [
         'This app was created with the help of fellow students as a project for our computer science course. The app contains many features, and gave us experience in Android development, and solidified our grasp of MVC principles. Tools, such as Firebase, and Android Studio helped us unleash the full potential of this app.',
       imageUrl:
         '/SEEEM.png',
-      workingTime: '8 weeks',
     },
     {
       title: 'Portfolio Website',
@@ -22,7 +21,6 @@ const posts = [
         'The website that you are looking at right now. Created with love using NextJS and styled using TailwindCSS.',
       imageUrl:
         '/portfoliowebsite.gif',
-      workingTime: '3 weeks',
       
     },
     {
@@ -30,7 +28,7 @@ const posts = [
       href: '/test',
       description:
         'This website contains all the necessary steps, and information required to become a student in Turkey. Built using Laravel, and TailwindCSS.',
-      workingTime: '6 weeks',
+      
       imageUrl:
         '/wip2.gif',
     },
@@ -39,7 +37,7 @@ const posts = [
       href: '/test',
       description:
         'This web application is a Full-Stack To Do List built using the MERN stack and adheres to CRUD principles.',
-      workingTime: '6 weeks',
+      
       imageUrl:
         '/wip3.gif',
     },
@@ -48,11 +46,17 @@ const posts = [
       href: '/test',
       description:
         'This web application is a Full-Stack  NoteBook app using React and Firebase.',
-      workingTime: '6 weeks',
       imageUrl:
         '/wip4.gif',
     },
-      
+    {
+      title: 'Your Website',
+      href: '/test',
+      description:
+        'This could be your website. The possiblities are endless just like your imagination.',
+      imageUrl:
+        '/website.gif',
+    },
   ]
   
   export default function Example() {
