@@ -8,7 +8,7 @@ import FooterComponent from "../components/common/footer";
 
 export default function Example() {
   return (
-    <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker">
+    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker">
       <Head>
         <title>Home Page</title>
       </Head>
@@ -43,7 +43,7 @@ export default function Example() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <img
               className="relative rounded-lg shadow-lg"
-              src="/123.PNG"
+              src="/123.webp"
               alt="screenshot"
             />
           </div>
@@ -56,14 +56,14 @@ export default function Example() {
           <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
             <a href="https://www.fiverr.com/mostafahigazy">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-20" src="/fiverr.png" alt="Fiverr" />
+              <img className="h-20" src="/fiverr.webp" alt="Fiverr" />
               </div>
             </a>
             <a href="https://www.upwork.com/o/profiles/users/~012a4278b6b59e6072/">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <img
                 className="h-12"
-                src="/upwork.png"
+                src="/upwork.webp"
                 alt="UpWork"
               />
             </div>
@@ -72,14 +72,14 @@ export default function Example() {
             <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
               <img
                 className="h-12"
-                src="/directly.png"
+                src="/directly.webp"
                 alt="Directly"
               />
             </div>
             </a>
             <a href="https://www.linkedin.com/in/mostafa-higazy-577576132">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src="/linkedin.png" alt="LinkedIn" />
+              <img className="h-12" src="/linkedin.webp" alt="LinkedIn" />
             </div>
             </a>
           </div>

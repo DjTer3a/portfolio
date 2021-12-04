@@ -9,7 +9,6 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'Portfolio', href: 'Portfolio' },
   { name: 'Blog', href: 'Blog' },
-  // add blog
   { name: 'About', href: 'About' },
   { name: 'Contact', href: 'Contact' },
 ]
@@ -75,7 +74,7 @@ export default function Layout({ children, home }) {
     
     <div className={styles.container}>
       
-    <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
       <div className="relative pt-6 pb-16 sm:pb-24">
     <Popover>
@@ -85,7 +84,7 @@ export default function Layout({ children, home }) {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="/">
                       <span className="sr-only">Workflow</span>
-                      <img className=" h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
+                      <img className=" h-16 utilStyles.borderCircle rounded-full" src="/profilepic.webp" alt="Picture of the author" id = "logo"/>
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="transition duration-500 ease-in-out hover:bg-page-white bg-page-bluelight rounded-md p-2 inline-flex items-center justify-center text-white hover:text-page-green hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 hover:bg-opacity-5">
@@ -132,7 +131,7 @@ export default function Layout({ children, home }) {
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
                     <a href="/">
-                    <img className="h-16 utilStyles.borderCircle rounded-full" src="/profilepic.png" alt="Picture of the author" id = "logo"/>
+                    <img className="h-16 utilStyles.borderCircle rounded-full" src="/profilepic.webp" alt="Picture of the author" id = "logo"/>
                     
                    </a>
 

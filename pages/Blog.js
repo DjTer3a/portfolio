@@ -8,8 +8,8 @@ import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
   return (
+    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">  
     <Layout home>
-      
       <Head>
       <title>{siteTitle}</title>
       </Head>
@@ -31,8 +31,8 @@ export default function Home({ allPostsData }) {
           ))}
         </ul></div>
       </section>
-      
-    </Layout>
+            
+    </Layout></div>
   )
 }
 

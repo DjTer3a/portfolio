@@ -31,7 +31,7 @@ export default function Example() {
             href="/"
             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-page-bluelight hover:text-page-green bg-opacity-25 hover:bg-opacity-75 hover:bg-white"
           >
-            Go back home
+            Go Back Home
           </a>
         </div>
       </div>

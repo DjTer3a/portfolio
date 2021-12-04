@@ -12,7 +12,7 @@ const posts = [
       description:
         'This app was created with the help of fellow students as a project for our computer science course. The app contains many features, and gave us experience in Android development, and solidified our grasp of MVC principles. Tools, such as Firebase, and Android Studio helped us unleash the full potential of this app.',
       imageUrl:
-        '/SEEEM.png',
+        '/SEEEM.webp',
     },
     {
       title: 'Portfolio Website',
@@ -61,7 +61,7 @@ const posts = [
   
   export default function Example() {
     return (
-      <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
         <Head>
           <title>Portfolio</title>
         </Head>

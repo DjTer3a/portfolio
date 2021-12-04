@@ -23,7 +23,7 @@ import FooterComponent from "../components/common/footer";
 
 export default function Example() {
   return (
-  <div className="bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">
     <Head>
       <title>About</title>
       </Head>
@@ -44,8 +44,8 @@ export default function Example() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
                     className="rounded-lg shadow-lg object-cover object-center"
-                    src="/profilepic.jpg"
-                    alt="Whitney leaning against a railing on a downtown street"
+                    src="/profilepic2.webp"
+                    alt="Mostafa looking cool.t"
                     width={1184}
                     height={1376}
                   />
