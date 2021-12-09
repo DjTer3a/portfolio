@@ -6,10 +6,10 @@ import profilepic from '../../public/profilepic.webp'
 
 export default function Header () {   
   const navigation = [
-    { name: 'Portfolio', href: './Portfolio' },
-    { name: 'Blog', href: './Blog' },
-    { name: 'About', href: './About' },
-    { name: 'Contact', href: './Contact' },
+    { name: 'Portfolio', href: '/Portfolio' },
+    { name: 'Blog', href: '/Blog' },
+    { name: 'About', href: '/About' },
+    { name: 'Contact', href: '/Contact' },
   ] 
   return (
     <div className="relative pt-6 pb-16 sm:pb-24">
