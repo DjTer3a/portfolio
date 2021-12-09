@@ -35,7 +35,6 @@ export default function Example() {
           </a>
         </div>
       </div>
-      <FooterComponent></FooterComponent>
     </main>
   )
 }
