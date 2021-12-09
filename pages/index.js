@@ -5,6 +5,12 @@ import Head from 'next/head'
 import Layout from '../components/Layouts'
 import HeaderComponent from "../components/common/header";
 import FooterComponent from "../components/common/footer";
+import Image from 'next/image';
+import coding from '../public/123.webp'
+import fiverr from '../public/fiverr.webp'
+import upwork from '../public/upwork.webp'
+import linkedin from '../public/linkedin.webp'
+import directly from '../public/directly.webp'
 
 export default function Example() {
   return (
@@ -30,10 +36,7 @@ export default function Example() {
                   </span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Hi I am Mostafa. I build elegant and functional websites and applications for ,
-                Small Businesses, Independent Creators, and anyone who needs a website.
-                Show the world what you are really about using cutting-edge technologies such as:- 
-                Nextjs, Vercel, Laravel, and TailwindCSS.
+              Hi, I am Mostafa. I build elegant and functional websites and applications for, Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS.
               </p>
             </div>
           </div>
@@ -41,11 +44,7 @@ export default function Example() {
 
         <div className="relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <img
-              className="relative rounded-lg shadow-lg"
-              src="/123.webp"
-              alt="screenshot"
-            />
+              <Image src={coding} alt="screenshot of the code used in this homepage"/>
           </div>
         </div>
       </div>
@@ -56,30 +55,22 @@ export default function Example() {
           <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
             <a href="https://www.fiverr.com/mostafahigazy">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-20" src="/fiverr.webp" alt="Fiverr" />
+              <Image src={fiverr} alt="Hire me on Fiverr" height={100} width={100}/>
               </div>
             </a>
             <a href="https://www.upwork.com/o/profiles/users/~012a4278b6b59e6072/">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="/upwork.webp"
-                alt="UpWork"
-              />
+            <Image src={upwork} alt="Hire me on Upwork" height={60} width={100}/>
             </div>
             </a>
             <a href="/Contact">
             <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-              <img
-                className="h-12"
-                src="/directly.webp"
-                alt="Directly"
-              />
+            <Image src={directly} alt="Hire me directly" height={60} width={100}/>
             </div>
             </a>
             <a href="https://www.linkedin.com/in/mostafa-higazy-577576132">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src="/linkedin.webp" alt="LinkedIn" />
+            <Image src={linkedin} alt="Hire me on LinkedIn" height={60} width={100}/>
             </div>
             </a>
           </div>

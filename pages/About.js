@@ -20,6 +20,9 @@ import { CameraIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layouts'
 import HeaderComponent from "../components/common/header";
 import FooterComponent from "../components/common/footer";
+import Image from 'next/image';
+import profilepic2 from '../public/profilepic2.webp'
+
 
 export default function Example() {
   return (
@@ -41,13 +44,12 @@ export default function Example() {
           <div className="relative lg:row-start-1 lg:col-start-2">
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <img
+                <div className="aspect-w-12 aspect-h-7 lg:aspect-hover">
+                  <Image
                     className="rounded-lg shadow-lg object-cover object-center"
-                    src="/profilepic2.webp"
-                    alt="Mostafa looking cool.t"
-                    width={1184}
-                    height={1376}
+                    src={profilepic2}
+                    alt="Mostafa looking cool."
+                    layout= 'fill'
                   />
                 </div>
                 <figcaption className="mt-3 flex text-sm text-gray-500">
@@ -60,30 +62,19 @@ export default function Example() {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-2xl text-white">
-              A Computer Engineering Student who started coding at an early age and fell in love with web development. 
-              Experienced and skilled in Laravel, PHP, ReactJS, Next.js, Node.js, Vue.js, MySql, Java, Kotlin, ReactNative, 
-              and GitHub. Full Stack Web Developer, Full Stack Andriod developer with Excellent communication and leadership skills.
+              A Computer Engineering Student who started coding at an early age and fell in love with web development. Experienced and skilled in Laravel, PHP, ReactJS, Next.js, Node.js, Vue.js, MySql, Java, Kotlin, ReactNative, and GitHub. Full Stack Web Developer, Full Stack Android developer with Excellent communication and leadership skills.
               </p>
             </div>
             <div className="text-lg mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-              Experienced and skilled in Laravel, PHP, ReactJS, Nextjs, Nodejs, Vuejs, MySql, 
-              Java, Kotlin, ReactNative, and GitHub. Full Stack Web Developer, 
-              Full Stack Andriod developer with Excellent communication and leadership skills.
-              </p>
-              <p>
               I believe in:-
               </p>
               <ul text-lg role="list">
-                <li>Spreading ideas as an essential tool to change the world.</li>
+                <li>Spreading ideas is an essential tool to change the world.</li>
                 <li>Building the best product at an affordable cost.</li>
                 <li>Creating a better everyday life for every customer.</li>
                 <li>Helping people and businesses generate passive income.</li>
               </ul>
-              <p>
-              Passionate about Music, Movies, Science, Cycling, Running, Fitness, Diet, and Programming. 
-              If you would like to build your application/website around any of these topics, a special discount is waiting for you.
-              </p>
               <p>
               My mission is :-
               To make the world a better place by bringing your vision to life.

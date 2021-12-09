@@ -10,7 +10,7 @@ const posts = [
       title: 'ِAndroid Music App',
       href: 'https://github.com/DjTer3a/g1a_project',
       description:
-        'This app was created with the help of fellow students as a project for our computer science course. The app contains many features, and gave us experience in Android development, and solidified our grasp of MVC principles. Tools, such as Firebase, and Android Studio helped us unleash the full potential of this app.',
+        'This app was created with the help of fellow students as a project for our computer science course. The app contains many features, and gave us experience in Android development, and solidified our grasp of MVC principles. Tools, such as Firebase and Android Studio helped us unleash the full potential of this app.',
       imageUrl:
         '/SEEEM.webp',
     },
@@ -18,7 +18,7 @@ const posts = [
       title: 'Portfolio Website',
       href: '/',
       description:
-        'The website that you are looking at right now. Created with love using NextJS and styled using TailwindCSS.',
+        'The website you are looking at right now is created with love using NextJS and styled using TailwindCSS.',
       imageUrl:
         '/portfoliowebsite.gif',
       
@@ -27,16 +27,16 @@ const posts = [
       title: 'Studying in Turkey(Work In Progress)',
       href: '/test',
       description:
-        'This website contains all the necessary steps, and information required to become a student in Turkey. Built using Laravel, and TailwindCSS.',
+        'This website contains all the necessary steps and information required to become a student in Turkey. Built using Laravel and TailwindCSS.',
       
       imageUrl:
         '/wip2.gif',
     },
     {
-      title: 'To Do List Web Application(Work In Progress)',
+      title: 'To-Do List Web Application(Work In Progress)',
       href: '/test',
       description:
-        'This web application is a Full-Stack To Do List built using the MERN stack and adheres to CRUD principles.',
+        'This web application is a Full-Stack To-Do List built using the MERN stack and adheres to CRUD principles.',
       
       imageUrl:
         '/wip3.gif',
@@ -53,7 +53,7 @@ const posts = [
       title: 'Your Website',
       href: '/test',
       description:
-        'This could be your website. The possiblities are endless just like your imagination.',
+        'This could be your website. The possibilities are endless, just like your imagination.',
       imageUrl:
         '/website.gif',
     },
