@@ -35,7 +35,7 @@ export default function Example() {
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h3 className="mt-2 text-6xl leading-8 font-extrabold tracking-tight text-page-green sm:text-6xl">
+            <h3 className="leading-8 tracking-tight text-page-green text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
               Meet Mostafa
             </h3>
           </div>
@@ -61,13 +61,13 @@ export default function Example() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <p className="text-2xl text-white">
+              <p className="text-xl text-white">
               A Computer Engineering Student who started coding at an early age and fell in love with web development. Experienced and skilled in Laravel, PHP, ReactJS, Next.js, Node.js, Vue.js, MySql, Java, Kotlin, ReactNative, and GitHub. Full Stack Web Developer, Full Stack Android developer with Excellent communication and leadership skills.
               </p>
             </div>
             <div className="text-lg mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-              I believe in:-
+              My beliefs are :-
               </p>
               <ul text-lg role="list">
                 <li>Spreading ideas is an essential tool to change the world.</li>
@@ -77,9 +77,8 @@ export default function Example() {
               </ul>
               <p>
               My mission is :-
-              To make the world a better place by bringing your vision to life.
+              <p>To make the world a better place by bringing your vision to life.</p>
               </p>
-              
             </div>
           </div>
         </div>

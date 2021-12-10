@@ -20,7 +20,7 @@ export default function Example() {
       </Head>
     <Layout></Layout>
     <HeaderComponent></HeaderComponent>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden items-center">
         <div className="relative pt-6 pb-16 sm:pb-24">
          <div className=" sm:px-6">
             <div className="text-center">
@@ -52,7 +52,7 @@ export default function Example() {
           <h2 className="text-center text-white text-xl font-semibold tracking-wide">
             Hire me on:-
           </h2>
-          <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4">
             <a href="https://www.fiverr.com/mostafahigazy">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <Image src={fiverr} alt="Hire me on Fiverr" height={100} width={100}/>

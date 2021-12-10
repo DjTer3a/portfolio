@@ -1,8 +1,3 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
-
 
 
 function FooterComponent() {  
@@ -64,13 +59,17 @@ function FooterComponent() {
             <h2 id="footer-heading" className="sr-only">
             Footer
             </h2>
-            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-            <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                <div className="space-y-8 xl:col-span-1">
-                <p className="text-white text-base">
-                    Making the world a better place by bringing your vision to life.
-                </p>
-                  <div className="flex space-x-6">
+            
+            <div className="max-w-7xl mx-auto py-8 px-4">
+              <div className="felx grid md:grid-flow-col gap-8 md:justify-between">
+              
+
+              <div className="text-white text-center">
+                    Bringing your vision to life with elegance.
+                </div>
+
+
+              <div className="flex space-x-6 mx-auto">
                       {footerNavigation.social.map((item) => (
                       <a key={item.name} href={item.href} className="transition duration-500 ease-in-out text-white hover:text-page-green">
                           <span className="sr-only">{item.name}</span>
@@ -78,11 +77,13 @@ function FooterComponent() {
                       </a>
                       ))}
                   </div>
+                  
+
+                <div className=" text-white text-center">
+                &copy; Mostafa Higazy. {new Date().getFullYear()} All rights reserved.
                 </div>
+                
             </div>
-                <p className="text-base text-white xl:text-center relative pt-6 pb-1">
-                &copy; Mostafa Higazy. 2021 All rights reserved.
-                </p>
             </div>
         </footer>
 	)

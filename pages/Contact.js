@@ -72,19 +72,17 @@ export default function Example() {
       <HeaderComponent></HeaderComponent>
       <main className="overflow-hidden">
         {/* Header */}
-        <div className="bg-warm-page-yellow">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
           <div className="py-5 lg:py-5">
             <div className="z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-extrabold tracking-tight text-page-green sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-extrabold tracking-tight text-page-green text-center sm:text-5xl lg:text-6xl">
                 Get in touch
               </h1>
-              <p className="mt-6 text-xl text-white max-w-3xl">
+              <p className="mt-6 text-xl text-white text-center">
                 Send me a message using the contact form below, and I will get in contact with you as soon as possible.
               </p>
             </div>
           </div>
-        </div>
         {/* Contact section */}
         <section className="relative" aria-labelledby="contact-heading">
           <div className="absolute w-full h-1/2 bg-warm-page-yellow" aria-hidden="true" />
@@ -193,16 +191,16 @@ export default function Example() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-page-green">Contact information</h3>
-                  <p className="mt-6 text-base text-teal-50 max-w-3xl">
+                  <h3 className="text-3xl font-medium text-page-green text-center">Contact information</h3>
+                  <p className="mt-2 text-base text-teal-50 max-w-3xl">
                     You can also contact me directly using any of the links below or using the links at the bottom of every page.
                   </p>
-                  <dl className="mt-8 space-y-6">
+                  <dl className="mt-2 space-y-6">
                     <dt>
                       <span className="sr-only">Phone number</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
-                      <PhoneIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
+                      <PhoneIcon className="flex-shrink-0 w-6 h-6 text-teal-200 text-center" aria-hidden="true" />
                       
                       <span className="transition duration-500 ease-in-out text-white hover:text-page-green ml-3">
                         <a href="tel:+90 (552) 724-9616">+90 (552) 724-9616</a>
@@ -388,14 +386,14 @@ export default function Example() {
         {/* Contact grid */}
         <section aria-labelledby="offices-heading">
           <div className="max-w-7xl mx-auto py-20 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 id="offices-heading" className="text-3xl font-extrabold text-page-green">
+            <h2 id="offices-heading" className="text-3xl font-extrabold text-page-green text-center">
               Languages Spoken
             </h2>
-            <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 mx-auto items-center">
               {offices.map((office) => (
                 <div key={office.id}>
-                  <h3 className="text-lg font-medium text-page-green">{office.Language}</h3>
-                  <p className="mt-2 text-base text-white">
+                  <h3 className="text-lg font-medium text-page-green text-center">{office.Language}</h3>
+                  <p className="mt-2 text-base text-white text-center">
                     {office.proficiency.map((line) => (
                       <span key={line} className="block">
                         {line}
