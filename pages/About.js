@@ -32,10 +32,10 @@ export default function Example() {
       </Head>
       <Layout></Layout>
       <HeaderComponent></HeaderComponent>
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h3 className="leading-8 tracking-tight text-page-green text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
+            <h3 className="text-center leading-8 tracking-tight text-page-green text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
               Meet Mostafa
             </h3>
           </div>
@@ -60,12 +60,19 @@ export default function Example() {
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
-            <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <p className="text-xl text-white">
-              A Computer Engineering Student who started coding at an early age and fell in love with web development. Experienced and skilled in Laravel, PHP, ReactJS, Next.js, Node.js, Vue.js, MySql, Java, Kotlin, ReactNative, and GitHub. Full Stack Web Developer, Full Stack Android developer with Excellent communication and leadership skills.
+            <div className="text-base ">
+              <p className="text-lg mt-3 prose prose-indigo text-white mx-auto">
+              A Computer Engineering Student who 
+              started coding at an early age and fell in 
+              love with web development. Experienced 
+              and skilled in Laravel, PHP, ReactJS, Next.js, 
+              Node.js, Vue.js, MySql, Java, Kotlin, ReactNative, 
+              and GitHub. Full Stack Web Developer, Full Stack 
+              Android developer with Excellent communication and 
+              leadership skills.
               </p>
             </div>
-            <div className="text-lg mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+            <div className="text-lg mt-3 prose prose-indigo text-white mx-auto ">
               <p>
               My beliefs are :-
               </p>

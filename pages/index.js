@@ -1,5 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
-
 import Typewriter from 'typewriter-effect';
 import Head from 'next/head'
 import Layout from '../components/Layouts'
