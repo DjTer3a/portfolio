@@ -1,11 +1,3 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
-
-
-
-
 
 export default function Example() {
     return (

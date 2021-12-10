@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
     <header className={styles.header}>
         {home ? (
           <>
-            <div className="text-white">
+            <div className="text-page-green">
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </div>
           </>

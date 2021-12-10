@@ -68,6 +68,11 @@ const posts = [
         <Layout></Layout>
         <HeaderComponent></HeaderComponent>
         <div className="relative max-w-7xl mx-auto">
+        <div className="text-center leading-8 tracking-tight text-page-green text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
+            <h3>
+              Projects
+            </h3>
+          </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none ">
             {posts.map((post) => (
               <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">

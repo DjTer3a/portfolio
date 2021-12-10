@@ -1,18 +1,18 @@
-import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../components/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Head from 'next/head'
 
 
 export default function Home({ allPostsData }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden">  
+    <div className="min-h-screen bg-gradient-to-b from-page-bluelight to-page-bluedarker overflow-hidden"> 
+     <Head>
+        <title>Blog</title>
+        </Head>
     <Layout home>
-      <Head>
-      <title>{siteTitle}</title>
-      </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}><div className="text-center">
         
 
