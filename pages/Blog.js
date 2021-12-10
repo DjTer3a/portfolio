@@ -19,15 +19,16 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <div className ="transition duration-500 ease-in-out px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-page-bluelight hover:bg-white hover:text-page-green hover:bg-opacity-5">
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+            <Link href={`/Blog/${id}`}>
+              <li className={utilStyles.listItem} key={id}>
                 <a>{title}</a>
-              </Link>
+              
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
-            </li></div>
+            </li></Link>
+            </div>
           ))}
         </ul></div>
       </section>

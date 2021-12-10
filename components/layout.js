@@ -25,14 +25,14 @@ export default function Layout({ children, home }) {
             </div>
           </>
         ) : (
-          <>
+          <><Link href="/Blog">
             <div className ="transition duration-500 ease-in-out inline-flex items-center px-2 py-1 border border-transparent text-base font-medium rounded-md text-white bg-page-bluelight hover:bg-white hover:text-page-green hover:bg-opacity-5">
             <h2 className={utilStyles.headingLg}>
-              <Link href="/Blog">
+              
                 <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
+              
             </h2>
-            </div>
+            </div></Link>
           </>
         )}
       </header>
