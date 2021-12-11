@@ -86,7 +86,6 @@ const posts = [
                       <p className="mt-3 text-base text-white">{post.description}</p>
                     </a>
                   </div>
-                  
                 </div>
               </div>
             ))}
