@@ -34,7 +34,7 @@ export default function Example() {
                   </span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Hi, I am Mostafa. I build elegant and functional websites and applications for, Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS.
+              Hi, I am Mostafa. I build elegant and functional websites and applications for Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS.
               </p>
             </div>
           </div>
