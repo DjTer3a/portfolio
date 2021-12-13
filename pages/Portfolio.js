@@ -45,7 +45,7 @@ const posts = [
       title: 'NoteBook App (Work In Progress)',
       href: '/test',
       description:
-        'This web application is a Full-Stack  NoteBook app using React and Firebase.',
+        'This web application is a web application that enables Note taking using React and Firebase.',
       imageUrl:
         '/wip4.gif',
     },
