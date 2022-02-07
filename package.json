@@ -19,7 +19,11 @@
     "jquery-tagcanvas": "^2.9.0",
     "mailgo": "^0.12.2",
     "mailgun-js": "^0.22.0",
+<<<<<<< HEAD
     "next": "^12.0.7",
+=======
+    "next": "12.0.2",
+>>>>>>> parent of 2b5d37d (fix: package.json & package-lock.json to reduce vulnerabilities)
     "next-i18next": "^9.1.0",
     "next-images": "^1.8.1",
     "postcss-flexbugs-fixes": "^5.0.2",
