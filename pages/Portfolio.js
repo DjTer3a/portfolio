@@ -24,7 +24,7 @@ const posts = [
       
     },
     {
-      title: 'Studying in Turkey(Work In Progress)',
+      title: 'UFPE CLUB (NFT PROJECT)',
       href: 'https://www.ufpe.club/',
       description:
       'a web 3 Dapp that allows users to mint unique NFTs as a Proof Of Concept/Minimum Viable Product for a client. The project was deployed to the Rinkeby test network. The contract was written using Solana, and the landing page was created using Next.js and TailwindCSS.',      
@@ -32,7 +32,7 @@ const posts = [
         '/ufpeCLUB.png',
     },
     {
-      title: 'To-Do List Web Application(Work In Progress)',
+      title: 'Bilheal (Health Managment Software)',
       href: 'https://bilheal.com',
       description:
         "BilHeal is a proposed web app for Bilkent University's Health Center that aims to ease the interaction between patients and the health centre's staff. It was created as a group project for the Object-Oriented Software Engineering course.",
@@ -41,7 +41,7 @@ const posts = [
         '/bilheal.png',
     },
     {
-      title: 'RESTAURANT REVIEWS WEBSITE',
+      title: 'Restaurant Reviews Website',
       href: 'https://github.com/DjTer3a/MERN_RestaurantsReviews/tree/master/reviewRestaurant',
       description:
         'Restaurant Review example website created using the MERN stack.',
