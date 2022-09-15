@@ -40,7 +40,7 @@ export default function Header () {
             <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
             <span className="inline-flex rounded-md shadow">
                 <a
-                href="/CV.pdf"
+                href="/mostafa_higazy_cv.pdf"
                 className="transition duration-500 ease-in-out inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-page-bluelight hover:bg-white hover:text-page-green hover:bg-opacity-5"
                 >
                 Download CV
@@ -91,7 +91,7 @@ export default function Header () {
                 ))}
             </div>
             <a
-                href="/CV.pdf"
+                href="/mostafa_higazy_cv.pdf"
                 className="transition duration-500 ease-in-out bg-page-bluelight block w-full px-5 py-3 text-center font-medium text-white hover:bg-white hover:text-page-green hover:bg-opacity-5"
             >
                 Download CV

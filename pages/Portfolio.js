@@ -25,27 +25,26 @@ const posts = [
     },
     {
       title: 'Studying in Turkey(Work In Progress)',
-      href: '/test',
+      href: 'https://www.ufpe.club/',
       description:
-        'This website contains all the necessary steps and information required to become a student in Turkey. Built using Laravel and TailwindCSS.',
-      
+      'a web 3 Dapp that allows users to mint unique NFTs as a Proof Of Concept/Minimum Viable Product for a client. The project was deployed to the Rinkeby test network. The contract was written using Solana, and the landing page was created using Next.js and TailwindCSS.',      
       imageUrl:
-        '/wip2.gif',
+        '/ufpeCLUB.png',
     },
     {
       title: 'To-Do List Web Application(Work In Progress)',
-      href: '/test',
+      href: 'https://bilheal.com',
       description:
-        'This web application is a Full-Stack To-Do List built using the MERN stack and adheres to CRUD principles.',
+        "BilHeal is a proposed web app for Bilkent University's Health Center that aims to ease the interaction between patients and the health centre's staff. It was created as a group project for the Object-Oriented Software Engineering course.",
       
       imageUrl:
-        '/wip3.gif',
+        '/bilheal.png',
     },
     {
-      title: 'NoteBook App (Work In Progress)',
-      href: '/test',
+      title: 'RESTAURANT REVIEWS WEBSITE',
+      href: 'https://github.com/DjTer3a/MERN_RestaurantsReviews/tree/master/reviewRestaurant',
       description:
-        'This web application is a web application that enables Note taking using React and Firebase.',
+        'Restaurant Review example website created using the MERN stack.',
       imageUrl:
         '/wip4.gif',
     },
