@@ -212,7 +212,7 @@ export default function Example() {
                     <dd className="flex text-base text-teal-50">
                       <MailIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
                       <span className="transition duration-500 ease-in-out text-white hover:text-page-green ml-3">
-                        <a  href="mailto:sasa2001711@gmail.com">sasa2001711@gmail.com</a>
+                        <a  href="mailto:mostafa@higazy.dev">mostafa@higazy.dev</a>
                       </span>
                     </dd>
                   </dl>
