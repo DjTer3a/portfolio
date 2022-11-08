@@ -250,9 +250,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Mostafa Higazy - Full-Stack software developer
-        </title>
+        <title>Mostafa Higazy - Full-Stack software developer</title>
         <meta
           name="description"
           content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
@@ -261,10 +259,15 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Full-Stack Software Engineer.
+            Full-Stack Software Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I am Mostafa. I build elegant and functional websites and applications for Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS.          </p>
+            Hi, I am Mostafa. I build elegant and functional websites and
+            applications for Small Businesses, Independent Creators, and anyone
+            who needs a website. Show the world what you are about using
+            cutting-edge technologies such as Nextjs, Vercel, Laravel, and
+            TailwindCSS.{' '}
+          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/mostafa2001711"
