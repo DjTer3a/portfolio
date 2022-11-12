@@ -4,7 +4,7 @@ import rehypePrism from '@mapbox/rehype-prism'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['jsx', 'mdx'],
+  pageExtensions: ['jsx', 'mdx','js'],
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
@@ -13,6 +13,9 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_G_API: process.env.NEXT_PUBLIC_GOOGLE_API,
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
+    FROM_EMAIL: process.env.FROM_EMAIL, 
+    TO_EMAIL: process.env.TO_EMAIL,
   },
 }
 
