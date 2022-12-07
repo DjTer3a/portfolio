@@ -275,7 +275,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="#" variant="secondary" className="bg-lighter dark:bg-dark group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -302,7 +302,7 @@ function Photos() {
               alt=""
               sizes="(min-width: 1080px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
-              quality={100}
+              unoptimized
             />
           </div>
         ))}

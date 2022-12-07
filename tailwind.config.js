@@ -303,7 +303,8 @@ module.exports = {
       colors:{
        'dark' : '#273139',
        'darker': '#0b1619',
-       'light' : '#e8e5dd'
+       'light' : '#e8e5dd',
+       'lighter': '#ECE9E2'
       }
     },
   },
