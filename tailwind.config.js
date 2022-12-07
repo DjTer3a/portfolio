@@ -299,5 +299,12 @@ module.exports = {
         },
       },
     }),
+    extend:{
+      colors:{
+       'dark' : '#273139',
+       'darker': '#0b1619',
+       'light' : '#e8e5dd'
+      }
+    },
   },
 }
