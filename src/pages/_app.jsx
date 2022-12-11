@@ -5,7 +5,7 @@ import { Header } from '@/components/Header'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
-import Script from 'next/script'
+// import Script from 'next/script'
 
 function usePrevious(value) {
   let ref = useRef()
@@ -19,11 +19,11 @@ function usePrevious(value) {
 
 export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router.pathname)
-  let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
+  // let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
   return (
     <>
-    <Script strategy="afterInteractive" src={scriptSrc}/>
-    <Script
+    {/* <Script strategy="afterInteractive" src={scriptSrc}/> */}
+    {/* <Script
       id='google-analytics'
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps, router }) {
           });
         `,
         }}
-    />
+    /> */}
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-7xl lg:px-8">
           <div className="w-full bg-light ring-1 ring-zinc-100 dark:bg-darker dark:ring-dark/20" />
