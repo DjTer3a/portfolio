@@ -7,7 +7,6 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
@@ -337,11 +336,6 @@ export default function Home({ articles }) {
               href="https://twitter.com/mostafa2001711"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://www.instagram.com/not_really_sane/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
             />
             <SocialLink
               href="https://github.com/DjTer3a"
