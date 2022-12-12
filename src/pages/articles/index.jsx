@@ -41,12 +41,12 @@ export default function ArticlesIndex({ articles }) {
         <title>Articles - Mostafa Higazy</title>
         <meta
           name="description"
-          content="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+          content="I hope you will find my posts useful and informative, and I welcome any feedback or suggestions you may have. Thank you for joining me on this journey of exploration and innovation."
         />
       </Head>
       <SimpleLayout
-        title="Writing on software design, company building, and the aerospace industry."
-        intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+        title="Welcome to my dev blog! Here, I will share my insights and tips on the latest software engineering and technology."
+        intro="I hope you will find my posts useful and informative, and I welcome any feedback or suggestions you may have. Thank you for joining me on this journey of exploration and innovation."
       >
         <div className="md:border-l md:border-dark md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

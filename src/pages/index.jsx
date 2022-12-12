@@ -16,14 +16,15 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import lea from '@/images/logos/lea.jpeg'
+import blesshost from '@/images/logos/blesshost.jpeg'
+import freelance from '@/images/logos/freelance.webp'
+import vc from '@/images/logos/vc.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import React, { useState } from 'react'
+import toast from "react-hot-toast";
 
 function MailIcon(props) {
   return (
@@ -129,9 +130,11 @@ function Newsletter() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(values),
-    });
-    console.log("added to mailing list");
-    handleSubmit2();
+    }).then((res) => {
+      toast.success("Thank you for subscribing to my Newsletter!");
+      handleSubmit2();
+    }
+    );
   };
 
   const data = {
@@ -224,35 +227,49 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Lea Growing People',
+      title: 'Full-stack Web Developer',
+      logo: lea,
+      start: 'Nov 2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Lea Growing People',
+      title: 'Intern Software Developer',
+      logo: lea,
+      start: 'June 2022',
+      end: 'Oct',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Virtual Cloud Information Technology LLC',
+      title: 'Intern Software Developer',
+      logo: vc,
+      start: 'May 2022',
+      end: 'June',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Freelance',
+      title: 'Full-Stack Web Developer',
+      logo: freelance,
+      start: 'Jan 2021',
+      end: '2022',
+    },
+    {
+      company: 'Blesshost',
+      title: 'Full-Stack Web Developer',
+      logo: blesshost,
+      start: 'Jan 2020',
+      end: '2021',
+    },
+    {
+      company: 'Blesshost',
+      title: 'Front-End Web Developer',
+      logo: blesshost,
+      start: 'June 2018',
+      end: '2020',
     },
   ]
 
@@ -266,7 +283,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <Image src={role.logo} alt="" className="h-7 w-7 rounded-full" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
