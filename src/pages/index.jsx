@@ -10,6 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
+import ReCAPTCHA from "react-google-recaptcha";
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -22,7 +23,7 @@ import logoStarbucks from '@/images/logos/starbucks.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 function MailIcon(props) {
   return (
@@ -114,6 +115,7 @@ function Newsletter() {
     type: false,
   });
   const { name, email} = values;
+  const recaptchaRef = React.createRef();
 
 
   const handleChange = (e) =>
@@ -121,13 +123,14 @@ function Newsletter() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("http://localhost:3000/api/mail", {
+    await fetch("/api/mail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(values),
     });
+    console.log("added to mailing list");
     handleSubmit2();
   };
 
@@ -138,7 +141,7 @@ function Newsletter() {
        
         },
     ],
-    "list_ids": process.env.MAILING_LIST,
+    "list_ids": process.env.NEXT_PUBLIC_MAILING_LIST,
      
   };
 
@@ -147,11 +150,25 @@ function Newsletter() {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
     });
   };
+  
+  const onReCAPTCHAChange = (captchaCode) => {
+  // If the reCAPTCHA code is null or undefined indicating that
+  // the reCAPTCHA was expired then return early
+  if(!captchaCode) {
+    return;
+  }
+  // Else reCAPTCHA was executed successfully so proceed with the 
+  // alert
+  alert(`Email sent to:, ${email}`);
+  // Reset the reCAPTCHA so that it can be executed again if user 
+  // submits another email.
+  recaptchaRef.current.reset();
+}
 
  
 
@@ -169,6 +186,12 @@ function Newsletter() {
         Get notified when I publish something new, and unsubscribe at any time.
       </p>
       <div className="mt-6 flex">
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey={process.env.NEXT_PUBLIC_CAPTCHA}
+          onChange={onReCAPTCHAChange}
+	      />
       <input
           type="text"
           name="name"
@@ -316,7 +339,7 @@ export default function Home({ articles }) {
         <title>Mostafa Higazy - Full-Stack software developer</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Hi, I am Mostafa. I build elegant and functional websites and applications for Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS."
         />
       </Head>
       <Container className="mt-9">
@@ -349,9 +372,17 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
+        
       </Container>
+      
       <Photos />
+      <Container>
+      <h2 className="mt-6 text-center text-lg font-bold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
+      Last year, I had the opportunity to take some of my favorite photos. These images hold a special place in my heart and I am pleased to share them with you.
+      </h2>
+      </Container>
       <Container className="mt-24 md:mt-28">
+        
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
