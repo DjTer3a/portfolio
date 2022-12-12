@@ -12,10 +12,11 @@ const nextConfig = {
     scrollRestoration: true,
   },
   env: {
-    NEXT_PUBLIC_G_API: process.env.NEXT_PUBLIC_GOOGLE_API,
-    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
-    FROM_EMAIL: process.env.FROM_EMAIL, 
-    TO_EMAIL: process.env.TO_EMAIL,
+    NEXT_PUBLIC_SENDGRID_API_KEY: process.env.NEXT_PUBLIC_SENDGRID_API_KEY,
+    NEXT_PUBLIC_FROM_EMAIL: process.env.NEXT_PUBLIC_FROM_EMAIL, 
+    NEXT_PUBLIC_TO_EMAIL: process.env.NEXT_PUBLIC_TO_EMAIL,
+    NEXT_PUBLIC_CAPTCHA: process.env.NEXT_PUBLIC_CAPTCHA,
+    NEXT_PUBLIC_CAPTCHA_SECRET: process.env.NEXT_PUBLIC_CAPTCHA_SECRET,
   },
 }
 
