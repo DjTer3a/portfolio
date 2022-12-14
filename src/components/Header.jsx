@@ -378,7 +378,7 @@ function toggleMode() {
                 },
                 modes: {
                     push: {
-                        quantity: 4,
+                        quantity: 0,
                     },
                     repulse: {
                         distance: 300,
@@ -398,7 +398,7 @@ function toggleMode() {
                     width: 1,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     directions: "none",
@@ -456,9 +456,9 @@ function toggleMode() {
                         resize: true,
                     },
                     modes: {
-                        push: {
-                            quantity: 4,
-                        },
+                      push: {
+                        quantity: 0,
+                    },
                         repulse: {
                             distance: 300,
                             duration: 0.4,
@@ -477,7 +477,7 @@ function toggleMode() {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
