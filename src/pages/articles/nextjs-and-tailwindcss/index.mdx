@@ -1,0 +1,39 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/future/image'
+import blog from './blog.webp'
+
+export const meta = {
+  author: 'Mostafa Higazy',
+  date: '2022-12-05',
+  title: 'Next.js and Tailwind CSS: A Powerful Combination for Building Scalable Applications',
+  description:
+    'Next.js is a popular JavaScript framework for building server-rendered and statically-exported applications. It is built on top of React, which allows developers to create and manage complex user interfaces with ease.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Next.js is a popular JavaScript framework for building server-rendered and statically-exported applications. It is built on top of React, which allows developers to create and manage complex user interfaces with ease.
+
+<Image src={blog} alt="" />
+
+
+One of the benefits of using Next.js is its automatic code splitting, which allows the application to load faster by only loading the necessary code for each page. This means that users don't have to download the entire application at once, improving the overall performance and user experience.
+
+Another advantage of Next.js is its built-in support for server-side rendering. This means that pages are rendered on the server and served to the user, instead of being rendered on the client-side using JavaScript. This can improve the initial load time of the page, as the content is already available to the user when the page is loaded.
+
+In addition to its core features, Next.js also has a rich ecosystem of plugins and integrations that can help developers to build powerful and scalable applications. One such integration is with the popular CSS framework, Tailwind CSS.
+
+Tailwind CSS is a utility-first CSS framework that allows developers to quickly build custom user interfaces without the need for complex CSS rules. It provides a set of low-level utility classes that can be composed together to create custom designs, without the need for custom stylesheets.
+
+The combination of Next.js and Tailwind CSS allows developers to create fast and performant applications with customizable user interfaces. By using the automatic code-splitting and server-side rendering capabilities of Next.js, and the utility-first approach of Tailwind CSS, developers can focus on building great user experiences without being bogged down by complex front-end code.
+
+In conclusion, Next.js and Tailwind CSS are a powerful combination for building fast and scalable applications with customizable user interfaces. By leveraging the benefits of both frameworks, developers can create high-quality applications that provide a great user experience.
+
+**Resources to check out:**
+1. [Install Tailwind CSS in Next.js?](https://medium.com/nextjs/install-tailwind-css-in-next-js-37a56bd64fa7)
+2. [Rebuilding Medium With TailwindCSS & Nextjs](https://dev.to/thenayak/rebuilding-medium-with-tailwindcss-nextjs-hh3)
+3. [Next.js](https://nextjs.org/)
+4. [Tailwind CSS](https://tailwindcss.com/)
+5. [React](https://reactjs.org/)
+6. [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+7. [React Router](https://reactrouter.com/)
