@@ -1,8 +1,12 @@
 import { useEffect, useRef } from 'react'
-
+import {ThemeProvider} from 'next-themes'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Toaster } from "react-hot-toast";
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import {useTheme} from 'next-themes'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
@@ -22,7 +26,9 @@ export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router.pathname)
   // let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
   return (
+    <ThemeProvider attribute="class">
     <>
+     
     {/* <Script strategy="afterInteractive" src={scriptSrc}/> */}
     {/* <Script
       id='google-analytics'
@@ -52,5 +58,6 @@ export default function App({ Component, pageProps, router }) {
         <Footer />
       </div>
     </>
+    </ThemeProvider>
   )
 }
