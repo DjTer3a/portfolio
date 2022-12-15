@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import {useTheme} from 'next-themes'
+import { useCallback } from 'react'
+import Particles from 'react-particles'
+import { loadFull } from 'tsparticles'
+import { useTheme } from 'next-themes'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/profile.jpg'
@@ -316,200 +316,220 @@ export function Header() {
       window.removeEventListener('resize', updateStyles)
     }
   }, [isHomePage])
-  const {theme, setTheme} = useTheme()
-  const particlesInit = useCallback(async engine => {
-    console.log(engine);
+  const { theme, setTheme } = useTheme()
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine)
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-}, []);
+    await loadFull(engine)
+  }, [])
 
-const particlesLoaded = useCallback(async container => {
-    await console.log(container);
-}, []);
-function disableTransitionsTemporarily() {
-  document.documentElement.classList.add('[&_*]:!transition-none')
-  window.setTimeout(() => {
-    document.documentElement.classList.remove('[&_*]:!transition-none')
-  }, 0)
-}
-
-function toggleMode() {
-  setTheme(theme === 'dark' ? 'light' : 'dark')
-  disableTransitionsTemporarily()
-
-  let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-  let isSystemDarkMode = darkModeMediaQuery.matches
-  let isDarkMode = document.documentElement.classList.toggle('dark')
-
-  if (isDarkMode === isSystemDarkMode) {
-    delete window.localStorage.isDarkMode
-  } else {
-    window.localStorage.isDarkMode = isDarkMode
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container)
+  }, [])
+  function disableTransitionsTemporarily() {
+    document.documentElement.classList.add('[&_*]:!transition-none')
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('[&_*]:!transition-none')
+    }, 0)
   }
-}
-
-  return (
-    <>
-    {theme == 'light' ?
-        <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-            background: {
-                color: {
-                    value: "#e8e5dd",
-                },
-            },
-            fpsLimit: 120,
-            interactivity: {
-                events: {
-                    onClick: {
-                        enable: true,
-                        mode: "push",
-                    },
-                    onHover: {
-                        enable: true,
-                        mode: "repulse",
-                    },
-                    resize: true,
-                },
-                modes: {
-                    push: {
-                        quantity: 0,
-                    },
-                    repulse: {
-                        distance: 300,
-                        duration: 0.4,
-                    },
-                },
-            },
-            particles: {
-                color: {
-                    value: "#273139",
-                },
-                links: {
-                    color: "#273139",
-                    distance: 150,
-                    enable: true,
-                    opacity: 0.5,
-                    width: 1,
-                },
-                collisions: {
-                    enable: false,
-                },
-                move: {
-                    directions: "none",
-                    enable: true,
-                    outModes: {
-                        default: "bounce",
-                    },
-                    random: false,
-                    speed: 6,
-                    straight: false,
-                },
-                number: {
-                    density: {
-                        enable: true,
-                        area: 800,
-                    },
-                    value: 80,
-                },
-                opacity: {
-                    value: 0.5,
-                },
-                shape: {
-                    type: "circle",
-                },
-                size: {
-                    value: { min: 1, max: 5 },
-                },
-            },
-            detectRetina: true,
-        }}
-    />
-        
-         :
-        <Particles
+  function particlesTheme(theme) {
+    return (
+      <>
+        {theme == 'light' ? (
+          <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#0b1619",
-                    },
+              background: {
+                color: {
+                  value: '#e8e5dd',
                 },
-                fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                      push: {
-                        quantity: 0,
-                    },
-                        repulse: {
-                            distance: 300,
-                            duration: 0.4,
-                        },
-                    },
+              },
+              fpsLimit: 120,
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: 'push',
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: 'repulse',
+                  },
+                  resize: true,
                 },
-                particles: {
-                    color: {
-                        value: "#e8e5dd",
-                    },
-                    links: {
-                        color: "#e8e5dd",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    collisions: {
-                        enable: false,
-                    },
-                    move: {
-                        directions: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce",
-                        },
-                        random: false,
-                        speed: 6,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
-                        value: 80,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: { min: 1, max: 5 },
-                    },
+                modes: {
+                  push: {
+                    quantity: 0,
+                  },
+                  repulse: {
+                    distance: 300,
+                    duration: 0.4,
+                  },
                 },
-                detectRetina: true,
+              },
+              particles: {
+                color: {
+                  value: '#273139',
+                },
+                links: {
+                  color: '#273139',
+                  distance: 150,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                collisions: {
+                  enable: false,
+                },
+                move: {
+                  directions: 'none',
+                  enable: true,
+                  outModes: {
+                    default: 'bounce',
+                  },
+                  random: false,
+                  speed: 6,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                    area: 800,
+                  },
+                  value: 80,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: 'circle',
+                },
+                size: {
+                  value: { min: 1, max: 5 },
+                },
+              },
+              detectRetina: true,
             }}
-        />
-        }
+          />
+        ) : (
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+              background: {
+                color: {
+                  value: '#0b1619',
+                },
+              },
+              fpsLimit: 120,
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: 'push',
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: 'repulse',
+                  },
+                  resize: true,
+                },
+                modes: {
+                  push: {
+                    quantity: 0,
+                  },
+                  repulse: {
+                    distance: 300,
+                    duration: 0.4,
+                  },
+                },
+              },
+              particles: {
+                color: {
+                  value: '#e8e5dd',
+                },
+                links: {
+                  color: '#e8e5dd',
+                  distance: 150,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                collisions: {
+                  enable: false,
+                },
+                move: {
+                  directions: 'none',
+                  enable: true,
+                  outModes: {
+                    default: 'bounce',
+                  },
+                  random: false,
+                  speed: 6,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                    area: 800,
+                  },
+                  value: 80,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: 'circle',
+                },
+                size: {
+                  value: { min: 1, max: 5 },
+                },
+              },
+              detectRetina: true,
+            }}
+          />
+        )}
+      </>
+    )
+  }
+
+  function ToggleMode() {
+    return (
+      <button
+        type="button"
+        aria-label="Toggle dark mode"
+        className="group rounded-full bg-light/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-light/10 dark:hover:ring-light/20"
+        onClick={toggleMode}
+      >
+        <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-light [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-lighter [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
+        <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-700 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      </button>
+    )
+  }
+
+  function toggleMode() {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+    disableTransitionsTemporarily()
+
+    let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    let isSystemDarkMode = darkModeMediaQuery.matches
+    let isDarkMode = document.documentElement.classList.toggle('dark')
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
+    } else {
+      window.localStorage.isDarkMode = isDarkMode
+    }
+  }
+
+  return (
+    <>
+      {particlesTheme(theme)}
       <header
         className="pointer-events-none relative z-50 flex flex-col"
         style={{
@@ -571,19 +591,7 @@ function toggleMode() {
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
-                <div className="pointer-events-auto">
-
-
-                <button
-      type="button"
-      aria-label="Toggle dark mode"
-      className="group rounded-full bg-light/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-light/10 dark:hover:ring-light/20"
-      onClick={toggleMode}
-    >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-light [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-lighter [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-700 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
-    </button>
-                </div>
+                <div className="pointer-events-auto">{ToggleMode()}</div>
               </div>
             </div>
           </Container>

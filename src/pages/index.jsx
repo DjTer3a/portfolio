@@ -5,12 +5,8 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
-import ReCAPTCHA from "react-google-recaptcha";
+import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import ReCAPTCHA from 'react-google-recaptcha'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -24,7 +20,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import React, { useState } from 'react'
-import toast from "react-hot-toast";
+import toast from 'react-hot-toast'
 
 function MailIcon(props) {
   return (
@@ -108,73 +104,65 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-
 function Newsletter() {
   const [values, setValues] = useState({
-    name: "",
-    email: "",
+    name: '',
+    email: '',
     type: false,
-  });
-  const { name, email} = values;
-  const recaptchaRef = React.createRef();
-
+  })
+  const { name, email } = values
+  const recaptchaRef = React.createRef()
 
   const handleChange = (e) =>
-    setValues({ ...values, [e.target.name]: e.target.value });
+    setValues({ ...values, [e.target.name]: e.target.value })
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    await fetch("/api/mail", {
-      method: "POST",
+    e.preventDefault()
+    await fetch('/api/mail', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(values),
     }).then((res) => {
-      toast.success("Thank you for subscribing to my Newsletter!");
-      handleSubmit2();
-    }
-    );
-  };
+      toast.success('Thank you for subscribing to my Newsletter!')
+      handleSubmit2()
+    })
+  }
 
   const data = {
-     "contacts": [
+    contacts: [
       {
-        "email": email,
-       
-        },
+        email: email,
+      },
     ],
-    "list_ids": process.env.NEXT_PUBLIC_MAILING_LIST,
-     
-  };
+    list_ids: process.env.NEXT_PUBLIC_MAILING_LIST,
+  }
 
   const handleSubmit2 = async () => {
-    await fetch("https://api.sendgrid.com/v3/marketing/contacts", {
-      method: "PUT",
+    await fetch('https://api.sendgrid.com/v3/marketing/contacts', {
+      method: 'PUT',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
-    });
-  };
-  
-  const onReCAPTCHAChange = (captchaCode) => {
-  // If the reCAPTCHA code is null or undefined indicating that
-  // the reCAPTCHA was expired then return early
-  if(!captchaCode) {
-    return;
+    })
   }
-  // Else reCAPTCHA was executed successfully so proceed with the 
-  // alert
-  alert(`Email sent to:, ${email}`);
-  // Reset the reCAPTCHA so that it can be executed again if user 
-  // submits another email.
-  recaptchaRef.current.reset();
-}
 
- 
-
+  const onReCAPTCHAChange = (captchaCode) => {
+    // If the reCAPTCHA code is null or undefined indicating that
+    // the reCAPTCHA was expired then return early
+    if (!captchaCode) {
+      return
+    }
+    // Else reCAPTCHA was executed successfully so proceed with the
+    // alert
+    alert(`Email sent to:, ${email}`)
+    // Reset the reCAPTCHA so that it can be executed again if user
+    // submits another email.
+    recaptchaRef.current.reset()
+  }
 
   return (
     <form
@@ -194,8 +182,8 @@ function Newsletter() {
           size="invisible"
           sitekey={process.env.NEXT_PUBLIC_CAPTCHA}
           onChange={onReCAPTCHAChange}
-	      />
-      <input
+        />
+        <input
           type="text"
           name="name"
           placeholder="Enter Your Name"
@@ -283,7 +271,12 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7 rounded-full" unoptimized />
+              <Image
+                src={role.logo}
+                alt=""
+                className="h-7 w-7 rounded-full"
+                unoptimized
+              />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -313,7 +306,11 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="/mostafa_higazy_cv.pdf" variant="secondary" className="bg-lighter dark:bg-dark group mt-6 w-full">
+      <Button
+        href="/mostafa_higazy_cv.pdf"
+        variant="secondary"
+        className="group mt-6 w-full bg-lighter dark:bg-dark"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -389,17 +386,17 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
-        
       </Container>
-      
+
       <Photos />
       <Container>
-      <h2 className="mt-6 text-center text-lg font-bold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
-      Last year, I had the opportunity to take some of my favorite photos. These images hold a special place in my heart and I am pleased to share them with you.
-      </h2>
+        <h2 className="mt-6 text-center text-lg font-bold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
+          Last year, I had the opportunity to take some of my favorite photos.
+          These images hold a special place in my heart and I am pleased to
+          share them with you.
+        </h2>
       </Container>
       <Container className="mt-24 md:mt-28">
-        
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (

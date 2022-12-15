@@ -4,11 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/profile.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -60,38 +56,57 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Mostafa Higazy. I live in Turkey, where I create full-stack web 
-              applications.
+              I’m Mostafa Higazy. I live in Turkey, where I create full-stack
+              web applications.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 My beliefs are :-
-                <li>Spreading ideas is an essential tool to change the world.</li>
+                <li>
+                  Spreading ideas is an essential tool to change the world.
+                </li>
                 <li>Building the best product at an affordable cost.</li>
                 <li>Creating a better everyday life for every customer.</li>
                 <li>Helping people and businesses generate passive income.</li>
               </p>
               <p>
-                My mission is :- 
-                <li>To make the world a better place by bringing your vision to life.</li>
+                My mission is :-
+                <li>
+                  To make the world a better place by bringing your vision to
+                  life.
+                </li>
               </p>
               <p>
-              I’m a Full-Stack Software Engineer. I carefully and expertly build, maintain and design websites and web applications.
-              Bringing both cutting-edge programming expertise and exceptional interpersonal skills to developer roles. I aim to 
-              add value to products and websites through honesty and perseverance. I aim to provide optimized, efficient,
-              professional, and high-quality products/services using bleeding-edge tools.
+                I’m a Full-Stack Software Engineer. I carefully and expertly
+                build, maintain and design websites and web applications.
+                Bringing both cutting-edge programming expertise and exceptional
+                interpersonal skills to developer roles. I aim to add value to
+                products and websites through honesty and perseverance. I aim to
+                provide optimized, efficient, professional, and high-quality
+                products/services using bleeding-edge tools.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/mostafa2001711" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/mostafa2001711"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://github.com/DjTer3a" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/DjTer3a"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/mostafa-dev/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/mostafa-dev/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink

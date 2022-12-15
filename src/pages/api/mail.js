@@ -1,11 +1,15 @@
-require("dotenv").config();
-const sgMail = require("@sendgrid/mail");
+require('dotenv').config()
+const sgMail = require('@sendgrid/mail')
 
-const { NEXT_PUBLIC_SENDGRID_API_KEY, NEXT_PUBLIC_FROM_EMAIL, NEXT_PUBLIC_TO_EMAIL} = process.env;
-sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY);
+const {
+  NEXT_PUBLIC_SENDGRID_API_KEY,
+  NEXT_PUBLIC_FROM_EMAIL,
+  NEXT_PUBLIC_TO_EMAIL,
+} = process.env
+sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
 
 export default async function handler(req, res) {
-  const { name, email } = req.body;
+  const { name, email } = req.body
   const msg = {
     to: email, // Change to your recipient
     from: NEXT_PUBLIC_FROM_EMAIL, // Change to your verified sender
@@ -137,8 +141,8 @@ export default async function handler(req, res) {
           </table>
         </div>
       </center>`,
-  };
-  await sgMail.send(msg);
-  console.log("email sent");
-  res.status(200).json({ success: true });
+  }
+  await sgMail.send(msg)
+  console.log('email sent')
+  res.status(200).json({ success: true })
 }
