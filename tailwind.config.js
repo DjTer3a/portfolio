@@ -304,7 +304,7 @@ module.exports = {
         dark: '#273139',
         darker: '#0b1619',
         light: '#e8e5dd',
-        lighter: '#ECE9E2',
+        lighter: '#f5f2eb',
       },
     },
   },

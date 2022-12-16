@@ -345,7 +345,7 @@ export function Header() {
             options={{
               background: {
                 color: {
-                  value: '#e8e5dd',
+                  value: '#f5f2eb',
                 },
               },
               fpsLimit: 120,
@@ -373,10 +373,10 @@ export function Header() {
               },
               particles: {
                 color: {
-                  value: '#273139',
+                  value: '#00776c',
                 },
                 links: {
-                  color: '#273139',
+                  color: '#00776c',
                   distance: 150,
                   enable: true,
                   opacity: 0.5,
