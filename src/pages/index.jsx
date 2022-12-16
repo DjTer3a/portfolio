@@ -4,6 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { Photos2 } from '@/components/Photos2'
 import { Container } from '@/components/Container'
 import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -389,10 +390,11 @@ export default function Home({ articles }) {
       </Container>
 
       <Photos />
+      {/* <Photos2 /> */}
       <Container>
         <h2 className="mt-6 text-center text-lg font-bold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
           Last year, I had the opportunity to take some of my favorite photos.
-          These images hold a special place in my heart and I am pleased to
+          These images hold a special place in my heart and I am pleased that I am able to
           share them with you.
         </h2>
       </Container>
