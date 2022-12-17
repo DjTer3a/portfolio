@@ -392,7 +392,7 @@ export function Header() {
                     default: 'bounce',
                   },
                   random: false,
-                  speed: 6,
+                  speed: 3,
                   straight: false,
                 },
                 number: {
@@ -470,7 +470,7 @@ export function Header() {
                     default: 'bounce',
                   },
                   random: false,
-                  speed: 6,
+                  speed: 3,
                   straight: false,
                 },
                 number: {
