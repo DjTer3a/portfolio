@@ -64,7 +64,7 @@ export default async function handler(req, res) {
             <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
               <tbody>
                 <tr>
-                <td align="center" bgcolor="#e85042" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;"><a href="https://mostafa.higazy.dev/articles" style="background-color:#e85042; border:1px solid #e85042; border-color:#e85042; border-radius:0px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:normal; letter-spacing:0px; line-height:normal; padding:12px 18px 12px 18px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;" target="_blank">Latest Articles</a></td>
+                <td align="center" bgcolor="#e85042" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;"><a href="https://higazy.dev/articles" style="background-color:#e85042; border:1px solid #e85042; border-color:#e85042; border-radius:0px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:normal; letter-spacing:0px; line-height:normal; padding:12px 18px 12px 18px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;" target="_blank">Latest Articles</a></td>
                 </tr>
               </tbody>
             </table>
@@ -100,7 +100,7 @@ export default async function handler(req, res) {
           <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="403f861d-b45c-4915-97d1-789aed7d5ba3.1.1" data-mc-module-version="2019-10-22">
     <tbody>
       <tr>
-        <td style="padding:18px 0px 18px 0px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: center"><a href="https://mostafa.higazy.dev/articles"><u>Blog</u></a></div><div></div></div></td>
+        <td style="padding:18px 0px 18px 0px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: center"><a href="https://higazy.dev/articles"><u>Blog</u></a></div><div></div></div></td>
       </tr>
     </tbody>
   </table></td>
