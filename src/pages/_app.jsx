@@ -24,6 +24,7 @@ export default function App({ Component, pageProps, router }) {
   return (
     <ThemeProvider attribute="class">
       <>
+      <Header />
         {/* <Script strategy="afterInteractive" src={scriptSrc}/> */}
         {/* <Script
       id='google-analytics'
@@ -41,11 +42,11 @@ export default function App({ Component, pageProps, router }) {
     /> */}
         <div className="fixed inset-0 flex justify-center sm:px-8">
           <div className="flex w-full max-w-7xl lg:px-8">
-            <div className="w-full bg-light ring-1 ring-zinc-100 dark:bg-darker dark:ring-dark/20" />
+            <div className="" />
           </div>
         </div>
         <div className="relative">
-          <Header />
+          
           <Toaster />
           <main>
             <Component previousPathname={previousPathname} {...pageProps} />

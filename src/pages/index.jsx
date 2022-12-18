@@ -22,6 +22,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
+// import { NowRequest, NowResponse } from '@vercel/node'
 
 function MailIcon(props) {
   return (
@@ -119,15 +120,20 @@ function Newsletter() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await fetch('https://www.higazy.dev/api/mail', {
+    await fetch('/api/mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(values),
     }).then((res) => {
-      toast.success('Thank you for subscribing to my Newsletter!')
-      handleSubmit2()
+      if (res.status >= 200 && res.status < 300) {
+        toast.success('Thank you for subscribing to my Newsletter!')
+        handleSubmit2()
+      } else {
+        toast.error('Something went wrong, please try again later, or contact me directly.')
+      }
+      
     })
   }
 
