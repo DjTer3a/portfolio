@@ -119,7 +119,7 @@ function Newsletter() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await fetch('/api/mail', {
+    await fetch('https://www.higazy.dev/api/mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
