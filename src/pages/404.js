@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Example() {
   return (
@@ -22,12 +23,12 @@ export default function Example() {
           It looks like the page you’re looking for doesn’t exist.
         </p>
         <div className="mt-6">
-          <a
+          <Link
             href="/"
             className=" hover:text-page-green inline-flex items-center rounded-md border border-transparent bg-opacity-25 px-4 py-2 text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:bg-zinc-500 hover:bg-opacity-75"
           >
             Go Back Home
-          </a>
+          </Link>
         </div>
       </div>
     </main>
