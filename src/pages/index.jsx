@@ -123,7 +123,7 @@ function Newsletter() {
     await fetch('/api/mail', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'content-type': 'application/json',
       },
       body: JSON.stringify(values),
     }).then((res) => {
@@ -150,8 +150,8 @@ function Newsletter() {
     await fetch('https://api.sendgrid.com/v3/marketing/contacts', {
       method: 'PUT',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization' : `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
+        'content-type': 'application/json',
+        Authorization : `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
     })
