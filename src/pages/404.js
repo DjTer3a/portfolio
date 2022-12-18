@@ -15,11 +15,11 @@ export default function Example() {
           404 error
         </p>
         <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Not every road leads to a destination, but don't let it discourage you
+          Not every road leads to a destination, but don’t let it discourage you
           from taking every road.
         </h1>
         <p className="mt-2 text-lg font-medium text-zinc-800 dark:text-zinc-100">
-          It looks like the page you’re looking for doesn't exist.
+          It looks like the page you’re looking for doesn’t exist.
         </p>
         <div className="mt-6">
           <a
