@@ -22,6 +22,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
+// import { NowRequest, NowResponse } from '@vercel/node'
 
 function MailIcon(props) {
   return (
@@ -126,8 +127,13 @@ function Newsletter() {
       },
       body: JSON.stringify(values),
     }).then((res) => {
-      toast.success('Thank you for subscribing to my Newsletter!')
-      handleSubmit2()
+      if (res.status >= 200 && res.status < 300) {
+        toast.success('Thank you for subscribing to my Newsletter!')
+        handleSubmit2()
+      } else {
+        toast.error('Something went wrong, please try again later, or contact me directly.')
+      }
+      
     })
   }
 
@@ -145,7 +151,7 @@ function Newsletter() {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
+        'Authorization' : `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
     })
