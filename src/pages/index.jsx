@@ -343,7 +343,7 @@ function Photos() {
               src={image}
               alt=""
               sizes="(min-width: 1080px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full object-cover"
               unoptimized
             />
           </div>
