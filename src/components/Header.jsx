@@ -366,7 +366,7 @@ export function Header() {
                     quantity: 0,
                   },
                   repulse: {
-                    distance: 300,
+                    distance: 200,
                     duration: 0.4,
                   },
                 },
@@ -392,7 +392,7 @@ export function Header() {
                     default: 'bounce',
                   },
                   random: false,
-                  speed: 3,
+                  speed: 0.5,
                   straight: false,
                 },
                 number: {
@@ -444,7 +444,7 @@ export function Header() {
                     quantity: 0,
                   },
                   repulse: {
-                    distance: 300,
+                    distance: 200,
                     duration: 0.4,
                   },
                 },
@@ -470,7 +470,7 @@ export function Header() {
                     default: 'bounce',
                   },
                   random: false,
-                  speed: 3,
+                  speed: 0.5,
                   straight: false,
                 },
                 number: {
