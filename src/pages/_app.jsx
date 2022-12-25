@@ -3,6 +3,7 @@ import { ThemeProvider } from 'next-themes'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Toaster } from 'react-hot-toast'
+import { usePathname } from 'next/navigation';
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
@@ -18,8 +19,8 @@ function usePrevious(value) {
   return ref.current
 }
 
-export default function App({ Component, pageProps, router }) {
-  let previousPathname = usePrevious(router.usePathname())
+export default function App({ Component, pageProps}) {
+  let previousPathname = usePrevious(usePathname())
   // let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
   return (
     <ThemeProvider attribute="class">
