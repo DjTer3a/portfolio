@@ -1,42 +1,34 @@
-# Spotlight
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio)](https://www.higazy.dev/) 
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+# 💼 Portfolio Website - Next.js 13 + React 18 + Tailwind CSS
 
-## Getting started
+# 👀 View at https://www.higazy.dev/
 
-To get started with this template, first install the npm dependencies:
+This is my portfolio website.
 
-```bash
-npm install
-```
+Below you will find the features, and upcoming improvements/features.
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+## Tech Stack
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
+1. ✅ Next.js 13
+2. ✅ React 18
+3. ✅ Tailwind CSS
+4. ✅ Vercel for deployment
+5. ✅ ESLint + Prettier
 
-Next, run the development server:
+## Feature List
 
-```bash
-npm run dev
-```
+### ✅ (Done)
+### 📝 (To-Do)
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+1. ✅ Used Next.js version 13.1.1 with React 18.2.0 and Tailwind CSS 3.2.4.
+2. ✅ Mobile-first, responsive design
+3. ✅ Dark Mode with background animation
+4. ✅ Newsletter form using SENDGRID API
+5. ✅ Interactive background animation using tsparticles
+6. ✅ Deployed Next.js production build to Vercel
+7. ✅ Established engineering best practices:
+   - Prettier, ESLint
+8. 📝 Implement tests using Jest.
+9. 📝 CI/CD with Travis CI and codecov.
+10. 📝 Add Unit tests
