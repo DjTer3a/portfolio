@@ -6,7 +6,6 @@ import { Toaster } from 'react-hot-toast'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
-import { useRouter } from 'next/router'
 // import Script from 'next/script'
 
 function usePrevious(value) {
@@ -19,11 +18,8 @@ function usePrevious(value) {
   return ref.current
 }
 
-
-
-export default function App({ Component, pageProps }) {
-  const router = useRouter()
-  let previousPathname = usePrevious(router.pathname)
+export default function App({ Component, pageProps, router }) {
+  let previousPathname = usePrevious(router.usePathname())
   // let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
   return (
     <ThemeProvider attribute="class">
