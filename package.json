@@ -1,6 +1,6 @@
 {
-  "name": "tailwindui-template",
-  "version": "0.1.0",
+  "name": "portfolio website",
+  "version": "2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -25,11 +25,11 @@
     "feed": "^4.2.2",
     "focus-visible": "^5.2.0",
     "net": "^1.0.2",
-    "next": "^12.3.0",
+    "next": "^13.1.1",
     "next-themes": "^0.2.1",
     "postcss-focus-visible": "^6.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-google-recaptcha": "^2.1.0",
     "react-hot-toast": "^2.4.0",
     "react-particles": "^2.6.0",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.5",
+    "eslint-config-next": "^13.1.1",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13"
   }
