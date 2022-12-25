@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { router, useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import { useCallback } from 'react'
