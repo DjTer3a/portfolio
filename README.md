@@ -27,7 +27,7 @@ Below you will find the features, and upcoming improvements/features.
 4. ✅ Newsletter form using SENDGRID API
 5. ✅ Interactive background animation using tsparticles
 6. ✅ Deployed Next.js production build to Vercel
-7. ✅ Established engineering best practices:
+7. ✅ Using Best practices:
    - Prettier, ESLint
 8. 📝 Implement tests using Jest.
 9. 📝 CI/CD with Travis CI and codecov.
