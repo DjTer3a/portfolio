@@ -3,7 +3,6 @@ import { ThemeProvider } from 'next-themes'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Toaster } from 'react-hot-toast'
-import { usePathname } from 'next/navigation';
 
 import '@/styles/tailwind.css'
 import 'focus-visible'

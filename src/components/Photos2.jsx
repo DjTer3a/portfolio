@@ -4,7 +4,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 export function Photos2() {
   const track = useRef(null);
