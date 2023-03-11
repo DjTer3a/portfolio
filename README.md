@@ -1,29 +1,34 @@
-# Next.js + Tailwind CSS Example
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio)](https://www.higazy.dev/) 
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# 💼 Portfolio Website - Next.js 12 + React 18 + Tailwind CSS
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+# 👀 View at https://www.higazy.dev/
 
-## Preview
+This is my portfolio website.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Below you will find the features, and upcoming improvements/features.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Tech Stack
 
-## Deploy your own
+1. ✅ Next.js 12
+2. ✅ React 18
+3. ✅ Tailwind CSS
+4. ✅ Vercel for deployment
+5. ✅ ESLint + Prettier
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Feature List
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### ✅ (Done)
+### 📝 (To-Do)
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+1. ✅ Used Next.js version 12.3.0 with React 18.2.0 and Tailwind CSS 3.2.4.
+2. ✅ Mobile-first, responsive design
+3. ✅ Dark Mode with background animation
+4. ✅ Newsletter form using SENDGRID API
+5. ✅ Interactive background animation using tsparticles
+6. ✅ Deployed Next.js production build to Vercel
+7. ✅ Using Best practices:
+   - Prettier, ESLint
+8. 📝 Implement tests using Jest.
+9. 📝 CI/CD with Travis CI and codecov.
+10. 📝 Add Unit tests
