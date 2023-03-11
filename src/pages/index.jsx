@@ -239,11 +239,14 @@ function Resume() {
       end: 'Oct',
     },
     {
-      company: 'Virtual Cloud Information Technology LLC',
-      title: 'Intern Software Developer',
-      logo: vc,
-      start: 'May 2022',
-      end: 'June',
+      company: 'Blackworks.io',
+      title: 'Full-stack Web Developer',
+      logo: freelance,
+      start: 'Nov 2022',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
     },
     {
       company: 'Freelance',
