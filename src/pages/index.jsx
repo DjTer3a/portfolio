@@ -239,7 +239,7 @@ function Resume() {
       end: 'Oct',
     },
     {
-      company: 'Blackworks.io',
+      company: 'Freelance Contractor',
       title: 'Full-stack Web Developer',
       logo: freelance,
       start: 'Nov 2022',
