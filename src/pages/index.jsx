@@ -345,7 +345,7 @@ function Photos() {
             <Image
               src={image}
               alt=""
-              sizes="(min-width: 1080px) 18rem, 11rem"
+              sizes="(min-width: 310px) 18rem, 11rem"
               className="absolute inset-0 h-full object-cover"
               unoptimized
             />
