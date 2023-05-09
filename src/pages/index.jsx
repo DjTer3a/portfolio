@@ -131,9 +131,10 @@ function Newsletter() {
         toast.success('Thank you for subscribing to my Newsletter!')
         handleSubmit2()
       } else {
-        toast.error('Something went wrong, please try again later, or contact me directly.')
+        toast.error(
+          'Something went wrong, please try again later, or contact me directly.'
+        )
       }
-      
     })
   }
 
@@ -151,7 +152,7 @@ function Newsletter() {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
-        Authorization : `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
     })
@@ -196,7 +197,7 @@ function Newsletter() {
           placeholder="Enter Your Name"
           aria-label="Enter Your Name"
           required
-          className="min-w-0 flex-auto appearance-none rounded-md border bg-transparent border-zinc-900/10 px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-transparent px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           value={name}
           onChange={handleChange}
         />
@@ -207,7 +208,7 @@ function Newsletter() {
           placeholder="Email address"
           aria-label="Email address"
           required
-          className="min-w-0 flex-auto appearance-none rounded-md border bg-transparent border-zinc-900/10 px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-transparent px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           value={email}
           onChange={handleChange}
         />
@@ -403,8 +404,8 @@ export default function Home({ articles }) {
       <Container>
         <h2 className="mt-6 text-center text-lg font-bold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
           Last year, I had the opportunity to take some of my favorite photos.
-          These images hold a special place in my heart and I am pleased that I am able to
-          share them with you.
+          These images hold a special place in my heart and I am pleased that I
+          am able to share them with you.
         </h2>
       </Container>
       <Container className="mt-24 md:mt-28">

@@ -1,12 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
-import Head from "next/head";
-import Link from "next/link";
+import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Example() {
   return (
-    <main
-      className="min-h-screen"
-    >
+    <main className="min-h-screen">
       <Head>
         <title>404</title>
       </Head>
@@ -25,12 +23,12 @@ export default function Example() {
         <div className="mt-6">
           <Link
             href="/"
-            className=" hover:text-page-green inline-flex items-center rounded-md border border-transparent bg-opacity-25 px-4 py-2 text-sm font-medium text-zinc-800 dark:text-zinc-100 hover:bg-zinc-500 hover:bg-opacity-75"
+            className=" hover:text-page-green inline-flex items-center rounded-md border border-transparent bg-opacity-25 px-4 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-500 hover:bg-opacity-75 dark:text-zinc-100"
           >
             Go Back Home
           </Link>
         </div>
       </div>
     </main>
-  );
+  )
 }

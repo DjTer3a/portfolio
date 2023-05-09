@@ -17,8 +17,11 @@ const projects = [
   {
     name: 'MyServerDubai',
     description:
-      'MyServerDubai provides dedicated hosting servers, VPS hosting servers and managed hosting servers from Dubai\'s data center. Created with a team of developers for Kasovy OÜ.',
-    link: { href: 'https://www.myserverdubai.com/', label: 'myserverdubai.com' },
+      "MyServerDubai provides dedicated hosting servers, VPS hosting servers and managed hosting servers from Dubai's data center. Created with a team of developers for Kasovy OÜ.",
+    link: {
+      href: 'https://www.myserverdubai.com/',
+      label: 'myserverdubai.com',
+    },
     logo: myserverdubai,
   },
   {
@@ -39,34 +42,46 @@ const projects = [
     name: 'Meta Locker',
     description:
       'Reduce churn and increase conversion rates in the emerging Web3.0 market. Contributed to the Meta Locker project as a wordpress plugin developer.',
-    link: { href: 'https://metaplugins.io/plugins/meta-locker', label: 'metaplugins.io' },
+    link: {
+      href: 'https://metaplugins.io/plugins/meta-locker',
+      label: 'metaplugins.io',
+    },
     logo: metaLockerLogo,
   },
   {
     name: 'Meta Auth',
     description:
       'Reduce the friction of 2FA for your users with a one click browser wallet solution. Contributed to the Meta Auth project as a wordpress plugin developer.',
-    link: { href: 'https://metaplugins.io/plugins/meta-authentication', label: 'metaplugins.io' },
+    link: {
+      href: 'https://metaplugins.io/plugins/meta-authentication',
+      label: 'metaplugins.io',
+    },
     logo: metaAuthLogo,
   },
   {
     name: 'Meta Age',
     description:
       'One click age verification through any browser wallet. Contributed to the Meta Age project as a wordpress plugin developer.',
-    link: { href: 'https://metaplugins.io/plugins/meta-age', label: 'metaplugins.io' },
+    link: {
+      href: 'https://metaplugins.io/plugins/meta-age',
+      label: 'metaplugins.io',
+    },
     logo: metaAgeLogo,
   },
   {
     name: 'Restaurant Reviews',
     description:
       'A website for finding and rating restaurants created using the MERN stack.',
-    link: { href: 'https://github.com/DjTer3a/MERN_RestaurantsReviews', label: 'github.com' },
+    link: {
+      href: 'https://github.com/DjTer3a/MERN_RestaurantsReviews',
+      label: 'github.com',
+    },
     logo: profileLogo,
   },
   {
     name: 'BilHeal',
     description:
-      'BilHeal is a proposed web app for Bilkent University\'s Health Center that aims to ease the interaction between patients and the health centre\'s staff. It was created as a group project for the Object-Oriented Software Engineering course.',
+      "BilHeal is a proposed web app for Bilkent University's Health Center that aims to ease the interaction between patients and the health centre's staff. It was created as a group project for the Object-Oriented Software Engineering course.",
     link: { href: 'https://bilheal.com/', label: 'bilheal.com' },
     logo: bilhealLogo,
   },
@@ -110,8 +125,6 @@ function LinkIcon(props) {
     </svg>
   )
 }
-
-
 
 export default function Projects() {
   return (

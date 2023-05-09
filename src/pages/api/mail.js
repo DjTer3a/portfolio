@@ -1,7 +1,6 @@
 // require('dotenv').config()
 const sgMail = require('@sendgrid/mail')
 
-
 const NEXT_PUBLIC_SENDGRID_API_KEY = process.env.NEXT_PUBLIC_SENDGRID_API_KEY
 const NEXT_PUBLIC_FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL
 const NEXT_PUBLIC_TO_EMAIL = process.env.NEXT_PUBLIC_TO_EMAIL
