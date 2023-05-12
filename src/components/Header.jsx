@@ -334,169 +334,169 @@ export function Header() {
       document.documentElement.classList.remove('[&_*]:!transition-none')
     }, 0)
   }
-  function particlesTheme(theme) {
-    return (
-      <>
-        {theme == 'light' ? (
-          <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-              background: {
-                color: {
-                  value: '#f5f2eb',
-                },
-              },
-              fpsLimit: 120,
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: true,
-                    mode: 'push',
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: 'repulse',
-                  },
-                  resize: true,
-                },
-                modes: {
-                  push: {
-                    quantity: 0,
-                  },
-                  repulse: {
-                    distance: 200,
-                    duration: 0.4,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: '#00776c',
-                },
-                links: {
-                  color: '#00776c',
-                  distance: 150,
-                  enable: true,
-                  opacity: 0.5,
-                  width: 1,
-                },
-                collisions: {
-                  enable: false,
-                },
-                move: {
-                  directions: 'none',
-                  enable: true,
-                  outModes: {
-                    default: 'bounce',
-                  },
-                  random: false,
-                  speed: 0.5,
-                  straight: false,
-                },
-                number: {
-                  density: {
-                    enable: true,
-                    area: 800,
-                  },
-                  value: 80,
-                },
-                opacity: {
-                  value: 0.5,
-                },
-                shape: {
-                  type: 'circle',
-                },
-                size: {
-                  value: { min: 1, max: 5 },
-                },
-              },
-              detectRetina: true,
-            }}
-          />
-        ) : (
-          <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-              background: {
-                color: {
-                  value: '#0b1619',
-                },
-              },
-              fpsLimit: 120,
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: true,
-                    mode: 'push',
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: 'repulse',
-                  },
-                  resize: true,
-                },
-                modes: {
-                  push: {
-                    quantity: 0,
-                  },
-                  repulse: {
-                    distance: 200,
-                    duration: 0.4,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: '#e8e5dd',
-                },
-                links: {
-                  color: '#e8e5dd',
-                  distance: 150,
-                  enable: true,
-                  opacity: 0.5,
-                  width: 1,
-                },
-                collisions: {
-                  enable: false,
-                },
-                move: {
-                  directions: 'none',
-                  enable: true,
-                  outModes: {
-                    default: 'bounce',
-                  },
-                  random: false,
-                  speed: 0.5,
-                  straight: false,
-                },
-                number: {
-                  density: {
-                    enable: true,
-                    area: 800,
-                  },
-                  value: 80,
-                },
-                opacity: {
-                  value: 0.5,
-                },
-                shape: {
-                  type: 'circle',
-                },
-                size: {
-                  value: { min: 1, max: 5 },
-                },
-              },
-              detectRetina: true,
-            }}
-          />
-        )}
-      </>
-    )
-  }
+  // function particlesTheme(theme) {
+  //   return (
+  //     <>
+  //       {theme == 'light' ? (
+  //         <Particles
+  //           id="tsparticles"
+  //           init={particlesInit}
+  //           loaded={particlesLoaded}
+  //           options={{
+  //             background: {
+  //               color: {
+  //                 value: '#f5f2eb',
+  //               },
+  //             },
+  //             fpsLimit: 120,
+  //             interactivity: {
+  //               events: {
+  //                 onClick: {
+  //                   enable: true,
+  //                   mode: 'push',
+  //                 },
+  //                 onHover: {
+  //                   enable: true,
+  //                   mode: 'repulse',
+  //                 },
+  //                 resize: true,
+  //               },
+  //               modes: {
+  //                 push: {
+  //                   quantity: 0,
+  //                 },
+  //                 repulse: {
+  //                   distance: 200,
+  //                   duration: 0.4,
+  //                 },
+  //               },
+  //             },
+  //             particles: {
+  //               color: {
+  //                 value: '#00776c',
+  //               },
+  //               links: {
+  //                 color: '#00776c',
+  //                 distance: 150,
+  //                 enable: true,
+  //                 opacity: 0.5,
+  //                 width: 1,
+  //               },
+  //               collisions: {
+  //                 enable: false,
+  //               },
+  //               move: {
+  //                 directions: 'none',
+  //                 enable: true,
+  //                 outModes: {
+  //                   default: 'bounce',
+  //                 },
+  //                 random: false,
+  //                 speed: 0.5,
+  //                 straight: false,
+  //               },
+  //               number: {
+  //                 density: {
+  //                   enable: true,
+  //                   area: 800,
+  //                 },
+  //                 value: 80,
+  //               },
+  //               opacity: {
+  //                 value: 0.5,
+  //               },
+  //               shape: {
+  //                 type: 'circle',
+  //               },
+  //               size: {
+  //                 value: { min: 1, max: 5 },
+  //               },
+  //             },
+  //             detectRetina: true,
+  //           }}
+  //         />
+  //       ) : (
+  //         <Particles
+  //           id="tsparticles"
+  //           init={particlesInit}
+  //           loaded={particlesLoaded}
+  //           options={{
+  //             background: {
+  //               color: {
+  //                 value: '#0b1619',
+  //               },
+  //             },
+  //             fpsLimit: 120,
+  //             interactivity: {
+  //               events: {
+  //                 onClick: {
+  //                   enable: true,
+  //                   mode: 'push',
+  //                 },
+  //                 onHover: {
+  //                   enable: true,
+  //                   mode: 'repulse',
+  //                 },
+  //                 resize: true,
+  //               },
+  //               modes: {
+  //                 push: {
+  //                   quantity: 0,
+  //                 },
+  //                 repulse: {
+  //                   distance: 200,
+  //                   duration: 0.4,
+  //                 },
+  //               },
+  //             },
+  //             particles: {
+  //               color: {
+  //                 value: '#e8e5dd',
+  //               },
+  //               links: {
+  //                 color: '#e8e5dd',
+  //                 distance: 150,
+  //                 enable: true,
+  //                 opacity: 0.5,
+  //                 width: 1,
+  //               },
+  //               collisions: {
+  //                 enable: false,
+  //               },
+  //               move: {
+  //                 directions: 'none',
+  //                 enable: true,
+  //                 outModes: {
+  //                   default: 'bounce',
+  //                 },
+  //                 random: false,
+  //                 speed: 0.5,
+  //                 straight: false,
+  //               },
+  //               number: {
+  //                 density: {
+  //                   enable: true,
+  //                   area: 800,
+  //                 },
+  //                 value: 80,
+  //               },
+  //               opacity: {
+  //                 value: 0.5,
+  //               },
+  //               shape: {
+  //                 type: 'circle',
+  //               },
+  //               size: {
+  //                 value: { min: 1, max: 5 },
+  //               },
+  //             },
+  //             detectRetina: true,
+  //           }}
+  //         />
+  //       )}
+  //     </>
+  //   )
+  // }
 
   function ToggleMode() {
     return (
@@ -529,7 +529,7 @@ export function Header() {
 
   return (
     <>
-      {particlesTheme(theme)}
+      {/* {particlesTheme(theme)} */}
       <header
         className="pointer-events-none relative z-50 flex flex-col"
         style={{
