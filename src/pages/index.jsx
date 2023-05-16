@@ -240,7 +240,7 @@ function Resume() {
       end: 'Oct',
     },
     {
-      company: 'Blackworks.io',
+      company: 'Freelance Contractor',
       title: 'Full-stack Web Developer',
       logo: freelance,
       start: 'Nov 2022',
@@ -346,7 +346,7 @@ function Photos() {
             <Image
               src={image}
               alt=""
-              sizes="(min-width: 1080px) 18rem, 11rem"
+              sizes="(min-width: 310px) 18rem, 11rem"
               className="absolute inset-0 h-full object-cover"
               unoptimized
             />
