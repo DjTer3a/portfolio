@@ -18,13 +18,13 @@ function usePrevious(value) {
   return ref.current
 }
 
-export default function App({ Component, pageProps, router}) {
+export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router)
   // let scriptSrc = `"https://www.googletagmanager.com/gtag/js?id="+${process.env.NEXT_PUBLIC_GOOGLE_API}`
   return (
     <ThemeProvider attribute="class">
       <>
-      <Header />
+        <Header />
         {/* <Script strategy="afterInteractive" src={scriptSrc}/> */}
         {/* <Script
       id='google-analytics'
@@ -46,7 +46,6 @@ export default function App({ Component, pageProps, router}) {
           </div>
         </div>
         <div className="relative">
-          
           <Toaster />
           <main>
             <Component previousPathname={previousPathname} {...pageProps} />
