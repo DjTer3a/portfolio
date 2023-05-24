@@ -224,24 +224,17 @@ function Resume() {
   let resume = [
     {
       company: 'Lea Growing People',
-      title: 'Full-stack Web Developer',
+      title: 'Frontend Engineer',
       logo: lea,
-      start: 'Nov 2022',
+      start: 'Jun 2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Lea Growing People',
-      title: 'Intern Software Developer',
-      logo: lea,
-      start: 'June 2022',
-      end: 'Oct',
-    },
-    {
-      company: 'Freelance Contractor',
-      title: 'Full-stack Web Developer',
+      company: 'Stealth Startup',
+      title: 'Full-Stack Engineer',
       logo: freelance,
       start: 'Nov 2022',
       end: {
@@ -251,24 +244,17 @@ function Resume() {
     },
     {
       company: 'Freelance',
-      title: 'Full-Stack Web Developer',
+      title: 'Frontend Engineer',
       logo: freelance,
       start: 'Jan 2021',
-      end: '2022',
+      end: 'Jan 2022',
     },
     {
       company: 'Blesshost',
-      title: 'Full-Stack Web Developer',
+      title: 'Frontend Engineer',
       logo: blesshost,
-      start: 'Jan 2020',
-      end: '2021',
-    },
-    {
-      company: 'Blesshost',
-      title: 'Front-End Web Developer',
-      logo: blesshost,
-      start: 'June 2018',
-      end: '2020',
+      start: 'Jan 2018',
+      end: 'Jan 2021',
     },
   ]
 
