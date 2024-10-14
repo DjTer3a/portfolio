@@ -14,6 +14,7 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import lea from '@/images/logos/lea.jpeg'
+import opskit from '@images/logos/opskitLogo.svg'
 import blesshost from '@/images/logos/blesshost.jpeg'
 import freelance from '@/images/logos/freelance.webp'
 import vc from '@/images/logos/vc.jpeg'
@@ -225,7 +226,7 @@ function Resume() {
     {
       company: 'Opskit',
       title: 'Full-Stack Engineer',
-      logo: lea,
+      logo: opskit,
       start: 'Dec 2023',
       end: {
         label: 'Present',
