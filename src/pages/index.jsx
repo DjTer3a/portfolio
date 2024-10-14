@@ -223,12 +223,22 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
+      company: 'Opskit',
+      title: 'Full-Stack Engineer',
+      logo: lea,
+      start: 'Dec 2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
+    {
       company: 'Lea Growing People',
-      title: 'Frontend Engineer',
+      title: 'Full-Stack Engineer',
       logo: lea,
       start: 'Jun 2022',
       end: {
-        label: 'Present',
+        label: 'Sep 2024',
         dateTime: new Date().getFullYear(),
       },
     },
@@ -238,7 +248,7 @@ function Resume() {
       logo: freelance,
       start: 'Nov 2022',
       end: {
-        label: 'Present',
+        label: 'Dec 2023',
         dateTime: new Date().getFullYear(),
       },
     },
