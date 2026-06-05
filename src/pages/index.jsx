@@ -17,6 +17,7 @@ import lea from '@/images/logos/lea.jpeg'
 import opskit from '@/images/logos/opskitLogo.svg'
 import blesshost from '@/images/logos/blesshost.jpeg'
 import freelance from '@/images/logos/freelance.webp'
+import myedspace from '@/images/logos/myedspace.png'
 import vc from '@/images/logos/vc.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -224,12 +225,22 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
+      company: 'MyEdSpace',
+      title: 'Full-Stack Engineer',
+      logo: myedspace,
+      start: 'Feb 2025',
+      end: {
+        label: 'May 2026',
+        dateTime: new Date().getFullYear(),
+      },
+    },
+    {
       company: 'Opskit',
       title: 'Full-Stack Engineer',
       logo: opskit,
       start: 'Dec 2023',
       end: {
-        label: 'Present',
+        label: 'Feb 2025',
         dateTime: new Date().getFullYear(),
       },
     },
@@ -278,11 +289,12 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-12 w-12 flex-none items-center justify-center overflow-hidden rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={role.logo}
-                alt=""
-                className="h-7 w-7 rounded-full"
+                alt={`${role.company} logo`}
+                className="h-14 w-12 object-contain"
+                sizes="56px"
                 unoptimized
               />
             </div>
@@ -315,7 +327,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="/mostafa_higazy_cv.pdf"
+        href="/001_mostafa_higazy_resume.pdf"
         variant="secondary"
         className="group mt-6 w-full bg-light dark:bg-dark"
       >
