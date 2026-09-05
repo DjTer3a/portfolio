@@ -30,13 +30,33 @@ export default function Uses() {
     <>
       <Head>
         <title>Uses - Mostafa Higazy</title>
-        <meta name="description" content="Software I use, and recommend." />
+        <meta
+          name="description"
+          content="The stack I ship with — Laravel, Symfony, React, Next.js, and AWS — plus the tools I use day to day."
+        />
       </Head>
       <SimpleLayout
-        title="Software I use, and recommend."
-        intro="Below is a list of some of my most used and favourite software."
+        title="The stack I ship with, and the tools around it."
+        intro="Laravel and Symfony on the backend, React and Next.js on the frontend, AWS in production — plus the editors, browsers, and trackers I reach for every day."
       >
         <div className="space-y-20">
+          <ToolsSection title="Stack">
+            <Tool title="Frontend">
+              JavaScript, TypeScript, React, Next.js, TailwindCSS, Alpine.js,
+              Livewire, and D3.js.
+            </Tool>
+            <Tool title="Backend">
+              PHP (Laravel, Symfony), Node.js (Express), Python (Django),
+              REST/OpenAPI, and Stripe & Intercom APIs.
+            </Tool>
+            <Tool title="Cloud & DevOps">
+              AWS (EBS, RDS, IAM, Route53), Vercel, Cloudflare, CI/CD, Pest, and
+              Jest.
+            </Tool>
+            <Tool title="Databases">
+              SQL, GraphQL, MongoDB, Firebase, Supabase, and DynamoDB.
+            </Tool>
+          </ToolsSection>
           <ToolsSection title="Development tools">
             <Tool title="Visual Studio Code (VS Code)">
               VS Code is a popular and powerful code editor developed by

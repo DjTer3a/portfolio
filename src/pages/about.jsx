@@ -39,7 +39,7 @@ export default function About() {
         <title>About - Mostafa Higazy</title>
         <meta
           name="description"
-          content="I’m Mostafa Higazy. I live in Turkey, where I create full-stack web applications."
+          content="I’m Mostafa Higazy, a full-stack engineer based between Abu Dhabi and Cairo. I ship web platforms end-to-end across edtech, ops tooling, and web3."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -56,34 +56,57 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Mostafa Higazy. I live in Turkey, where I create full-stack
-              web applications.
+              I’m Mostafa Higazy. I live between Abu Dhabi and Cairo, where I
+              ship full-stack web platforms.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                My beliefs are :-
-                <li>
-                  Spreading ideas is an essential tool to change the world.
-                </li>
-                <li>Building the best product at an affordable cost.</li>
-                <li>Creating a better everyday life for every customer.</li>
-                <li>Helping people and businesses generate passive income.</li>
+                I’m a full-stack engineer with 8+ years taking products from
+                idea to production — Laravel and Symfony backends, React and
+                Next.js frontends, and AWS infrastructure. I care about
+                performant, scalable systems that hold up under real use.
               </p>
               <p>
-                My mission is :-
-                <li>
-                  To make the world a better place by bringing your vision to
-                  life.
-                </li>
+                Most recently I engineered an LMS backend at MyEdSpace on
+                Symfony and Laravel, with OpenAPI-documented APIs serving 5,000+
+                daily active users. I built video attendance tracking across
+                200+ course videos, overhauled content tooling in React (40%
+                faster processing), integrated Intercom, and implemented custom
+                Stripe installment logic while cutting page load times 35%.
               </p>
               <p>
-                I’m a Full-Stack Software Engineer. I carefully and expertly
-                build, maintain and design websites and web applications.
-                Bringing both cutting-edge programming expertise and exceptional
-                interpersonal skills to developer roles. I aim to add value to
-                products and websites through honesty and perseverance. I aim to
-                provide optimized, efficient, professional, and high-quality
-                products/services using bleeding-edge tools.
+                Before that, at Opskit, I architected real-time
+                data-visualization dashboards — React, D3.js, GraphQL,
+                TailwindCSS, Amplify — covering 50+ operational metrics for mine
+                operators, and delivered three scalable products that
+                accelerated data processing 60%.
+              </p>
+              <p>
+                At LEA Growing People I built an onboarding system (Next.js,
+                Node.js, Express, Firebase) that cut onboarding time 80% for
+                hundreds of monthly new users, and a coaching platform whose
+                docs were adopted by 90% of users and reduced support tickets
+                40%.
+              </p>
+              <p>
+                Earlier I shipped seven web3 WordPress plugins — later migrated
+                to a monorepo, cutting build times 30% across 3,000+
+                installations — a web3 NFT marketplace that facilitated 2,000+
+                mints, and an AI story generator on Django, Next.js, and AWS. I
+                started at BlessHost designing mobile-first sites on the MERN
+                and TALL stacks.
+              </p>
+              <p>
+                I work across JavaScript and TypeScript on the frontend (React,
+                Next.js, TailwindCSS, Alpine.js, Livewire, D3.js); PHP, Node.js,
+                and Python on the backend (Laravel, Symfony, Express, Django);
+                and AWS, Vercel, Cloudflare, plus SQL, GraphQL, MongoDB,
+                Firebase, Supabase, and DynamoDB in production.
+              </p>
+              <p>
+                I hold a BSc in Computer Science from the University of London
+                (First Class Honours, 3.77 CGPA), after transferring from
+                Computer Engineering at Bilkent University.
               </p>
             </div>
           </div>

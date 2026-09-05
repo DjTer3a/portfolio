@@ -12,12 +12,50 @@ import metaLockerLogo from '@/images/logos/meta-locker.svg'
 import metaAuthLogo from '@/images/logos/meta-auth.svg'
 import metaAgeLogo from '@/images/logos/meta-age.svg'
 import bilkentLogo from '@/images/logos/bilkent_logo.png'
+import myedspaceLogo from '@/images/logos/myedspace.png'
+import opskitLogo from '@/images/logos/opskitLogo.svg'
+import freelanceLogo from '@/images/logos/freelance.webp'
 
 const projects = [
   {
+    name: 'MyEdSpace LMS',
+    description:
+      'Engineered the LMS backend on Symfony and Laravel with OpenAPI-documented APIs serving 5,000+ daily active users. Built video attendance tracking across 200+ course videos, overhauled React content tooling (40% faster processing), integrated Intercom, and implemented custom Stripe installment logic while cutting page load times 35%.',
+    link: { href: 'https://www.myedspace.co.uk/', label: 'myedspace.co.uk' },
+    logo: myedspaceLogo,
+  },
+  {
+    name: 'Opskit',
+    description:
+      'Architected real-time data-visualization dashboards with React, D3.js, GraphQL, TailwindCSS, and Amplify, spanning 50+ operational metrics for mine operators. Delivered three scalable products that accelerated data processing 60% across cross-functional teams.',
+    link: { href: '#', label: 'internal platform' },
+    logo: opskitLogo,
+  },
+  {
+    name: 'LEA Growing People',
+    description:
+      'Built an onboarding system (Next.js, Node.js, Express, Firebase) that cut onboarding time 80% for hundreds of monthly new users, and a coaching platform serving hundreds of clients. Authored docs adopted by 90% of users, reducing support tickets 40%.',
+    link: { href: '#', label: 'internal platform' },
+    logo: leaLogo,
+  },
+  {
+    name: 'UFPE',
+    description:
+      'Web3 NFT marketplace on IPFS, MongoDB, Next.js, and Hardhat/Truffle — 1,408 football collectibles and 2,000+ mints. Built as a freelance MVP.',
+    link: { href: 'https://www.ufpe.club/', label: 'ufpe.club' },
+    logo: ufpeLogo,
+  },
+  {
+    name: 'AI Story Generator',
+    description:
+      'Children’s story app on Django, Next.js, and AWS (EBS, RDS, IAM, Route53) that generates custom illustrated stories on demand for early adopters.',
+    link: { href: '#', label: 'freelance' },
+    logo: freelanceLogo,
+  },
+  {
     name: 'MyServerDubai',
     description:
-      "MyServerDubai provides dedicated hosting servers, VPS hosting servers and managed hosting servers from Dubai's data center. Created with a team of developers for Kasovy OÜ.",
+      'Mobile-first hosting site for dedicated, VPS, and managed servers from Dubai — MERN and TALL stacks, built with a team at BlessHost for Kasovy OÜ.',
     link: {
       href: 'https://www.myserverdubai.com/',
       label: 'myserverdubai.com',
@@ -25,23 +63,9 @@ const projects = [
     logo: myserverdubai,
   },
   {
-    name: 'UFPE',
-    description:
-      'With a grand total of 1408 stylishly designed football cards featuring hand-picked players, UFPE is the hottest place to get your hands on unique, must-have collectibles of turbo-charged attackers, impenetrable defenders, and goalkeepers with lightning fast reflexes. Created as an MVP for a client as a freelancer.',
-    link: { href: 'https://www.ufpe.club/', label: 'ufpe.club' },
-    logo: ufpeLogo,
-  },
-  {
-    name: 'Lea Digital Platform',
-    description:
-      'A platform for connecting clients and coaches through a centralized platform. Created for Lea Growing People as the Lead full-stack developer.',
-    link: { href: '#', label: 'internal tool(for now)' },
-    logo: leaLogo,
-  },
-  {
     name: 'Meta Locker',
     description:
-      'Reduce churn and increase conversion rates in the emerging Web3.0 market. Contributed to the Meta Locker project as a wordpress plugin developer.',
+      'One of seven web3 WordPress plugins later migrated to a monorepo — cutting build times 30% across 3,000+ installations. Reduces churn and lifts conversion in Web3.',
     link: {
       href: 'https://metaplugins.io/plugins/meta-locker',
       label: 'metaplugins.io',
@@ -51,7 +75,7 @@ const projects = [
   {
     name: 'Meta Auth',
     description:
-      'Reduce the friction of 2FA for your users with a one click browser wallet solution. Contributed to the Meta Auth project as a wordpress plugin developer.',
+      'One-click 2FA through a browser wallet. Part of the same seven-plugin web3 suite shipped for a stealth startup.',
     link: {
       href: 'https://metaplugins.io/plugins/meta-authentication',
       label: 'metaplugins.io',
@@ -61,7 +85,7 @@ const projects = [
   {
     name: 'Meta Age',
     description:
-      'One click age verification through any browser wallet. Contributed to the Meta Age project as a wordpress plugin developer.',
+      'One-click age verification through any browser wallet. Shipped as part of the web3 WordPress plugin suite.',
     link: {
       href: 'https://metaplugins.io/plugins/meta-age',
       label: 'metaplugins.io',
@@ -69,49 +93,25 @@ const projects = [
     logo: metaAgeLogo,
   },
   {
-    name: 'Restaurant Reviews',
-    description:
-      'A website for finding and rating restaurants created using the MERN stack.',
-    link: {
-      href: 'https://github.com/DjTer3a/MERN_RestaurantsReviews',
-      label: 'github.com',
-    },
-    logo: profileLogo,
-  },
-  {
     name: 'BilHeal',
     description:
-      "BilHeal is a proposed web app for Bilkent University's Health Center that aims to ease the interaction between patients and the health centre's staff. It was created as a group project for the Object-Oriented Software Engineering course.",
+      'Proposed web app for Bilkent University’s Health Center, easing interaction between patients and staff. Group project for Object-Oriented Software Engineering.',
     link: { href: 'https://bilheal.com/', label: 'bilheal.com' },
     logo: bilhealLogo,
   },
   {
     name: 'Kapibaro',
     description:
-      'Kapibaro is a programming langauge for IOT devices created using Lex & Yacc tools. It was created as a group project for the Programming Languages course.',
+      'Programming language for IoT devices, built with Lex and Yacc as a group project for Programming Languages.',
     link: { href: 'https://github.com/DjTer3a/Kapibaro', label: 'github.com' },
     logo: bilkentLogo,
   },
   {
     name: 'SEEEM',
     description:
-      'SEEEM is a feature-rich music app created using Java and Firebase. It was created as a group project for the Introduction to Programming II course.',
+      'Feature-rich music app built with Java and Firebase. Group project for Introduction to Programming II.',
     link: { href: 'https://github.com/DjTer3a/Kapibaro', label: 'github.com' },
     logo: bilkentLogo,
-  },
-  {
-    name: 'Greenhouse Monitoring System',
-    description:
-      'Greenhouse Monitoring System is an app that monitors greenhouses using connected virtual sensors created using React Native. A hobby project (still in development).',
-    link: { href: '#', label: 'W.I.P.' },
-    logo: profileLogo,
-  },
-  {
-    name: 'NoteScrapper',
-    description:
-      'Insert a link and get all the pdfs included on the webpage as a zip file created using python. A hobby project (still in development).',
-    link: { href: '#', label: 'W.I.P.' },
-    logo: profileLogo,
   },
 ]
 
@@ -133,12 +133,12 @@ export default function Projects() {
         <title>Projects - Mostafa Higazy</title>
         <meta
           name="description"
-          content="Projects that I have worked on with others or created myself."
+          content="Selected work across edtech, ops tooling, and web3 — LMS backends, real-time dashboards, coaching platforms, and more."
         />
       </Head>
       <SimpleLayout
-        title="Projects that I have worked on with others or created myself."
-        intro="I’ve worked on tons of little projects over the years but these are the most notable ones. Some of them are available on github, so if you see something that piques your interest, check out the code, and do not hesitate to reach out for feedback."
+        title="Platforms I’ve shipped across edtech, ops, and web3."
+        intro="These are the products I’m most proud of — LMS backends serving thousands of daily users, real-time ops dashboards, coaching platforms, and web3 tooling. A few are public; others were internal. If something looks interesting, the code or a walkthrough is a message away."
       >
         <ul
           role="list"

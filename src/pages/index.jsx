@@ -18,7 +18,6 @@ import opskit from '@/images/logos/opskitLogo.svg'
 import blesshost from '@/images/logos/blesshost.jpeg'
 import freelance from '@/images/logos/freelance.webp'
 import myedspace from '@/images/logos/myedspace.png'
-import vc from '@/images/logos/vc.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -245,7 +244,7 @@ function Resume() {
       },
     },
     {
-      company: 'Lea Growing People',
+      company: 'LEA Growing People',
       title: 'Full-Stack Engineer',
       logo: lea,
       start: 'Jun 2022',
@@ -266,13 +265,13 @@ function Resume() {
     },
     {
       company: 'Freelance',
-      title: 'Frontend Engineer',
+      title: 'Full-Stack Engineer',
       logo: freelance,
       start: 'Jan 2021',
-      end: 'Jan 2022',
+      end: 'Dec 2023',
     },
     {
-      company: 'Blesshost',
+      company: 'BlessHost',
       title: 'Frontend Engineer',
       logo: blesshost,
       start: 'Jan 2018',
@@ -370,23 +369,22 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Mostafa Higazy - Full-Stack software developer</title>
+        <title>Mostafa Higazy - Full-Stack Engineer</title>
         <meta
           name="description"
-          content="Hi, I am Mostafa. I build elegant and functional websites and applications for Small Businesses, Independent Creators, and anyone who needs a website. Show the world what you are about using cutting-edge technologies such as Nextjs, Vercel, Laravel, and TailwindCSS."
+          content="Full-stack engineer with 8+ years shipping web platforms end-to-end across edtech, ops tooling, and web3. Strong on Laravel/Symfony backends, React/Next.js frontends, and AWS infrastructure."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Full-Stack Software Engineer.
+            Full-Stack Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I am Mostafa. I build elegant and functional websites and
-            applications for Small Businesses, Independent Creators, and anyone
-            who needs a website. Show the world what you are about using
-            cutting-edge technologies such as Nextjs, Vercel, Laravel, and
-            TailwindCSS.{' '}
+            I ship web platforms end-to-end — Laravel and Symfony backends,
+            React and Next.js frontends, and AWS infrastructure. Over 8 years
+            I’ve built performant, scalable products across edtech, ops tooling,
+            and web3.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
